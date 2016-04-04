@@ -1,0 +1,24 @@
+{
+  "name": "Mochi",
+  "description": "Better fundraising for nonprofits",
+  "main": "client/index.js",
+  "authors": [
+    "Ssean Herman <sjh293@cornell.edu>"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/seanjh/mochi",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-fonts": "*"
+  }
+}
