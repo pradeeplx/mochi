@@ -37,9 +37,16 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
+    "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
+    "cookie-parser": "^1.4.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "hjs": "0.0.6",
     "jquery": "^2.2.2",
     "jquery-ui": "^1.10.5",
+    "less-middleware": "^2.1.0",
+    "morgan": "^1.7.0",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
   }
