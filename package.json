@@ -4,8 +4,11 @@
   "description": "Better fundraising for nonprofits",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "webpack --progress --colors",
+    "prestart": "npm run build",
+    "start": "node server",
+    "build:static": "cp client/index.html public && cp -rf client/css public",
+    "build:js": "webpack --progress --colors",
+    "build": "npm run build:static && npm run build:js",
     "watch": "webpack --progress --colors --watch",
     "test": "echo \"Error: no test specified\""
   },
