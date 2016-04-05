@@ -26,8 +26,8 @@ export const UserProfile = () =>
     <section id="main-container" className="container-fluid">
       <div className="row">
         <SideBar />
-        <Profile>Gideon Glass</Profile>
-        <Timeline>Timeline</Timeline>
+        <Profile name="Gideon Glass" />
+        <Timeline />
       </div>
     </section>
   </div>;
