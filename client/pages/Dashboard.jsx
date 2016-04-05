@@ -1,0 +1,22 @@
+'use strict';
+
+import React from 'react'; // eslint-disable-line no-unused-vars
+import NavBar from '../components/NavBar';
+import SideBar from '../components/SideBar';
+import UserProfile from '../pages/UserProfile';
+
+export const Dashboard = () =>
+  <div>
+    <NavBar brandName="Mochi" />
+    <section id="main-container" className="container-fluid">
+      <div className="row">
+        <SideBar />
+        <section id="content-area">
+          {/* TODO: Swap out main content area based on nav menu */}
+          <UserProfile />
+        </section>
+      </div>
+    </section>
+  </div>;
+
+export default Dashboard;

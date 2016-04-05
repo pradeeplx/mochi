@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { PropTypes } from 'react';
-import NavItem from './NavBar/NavItem';
+import NavItem from './NavItem';
 
 export class SideBar extends React.Component {
   getNavItems() {
