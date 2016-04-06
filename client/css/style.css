@@ -9,6 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Titillium Web', sans-serif;
+  color: #333333;
 }
 
 a, span{
@@ -245,6 +246,7 @@ a, span{
 
 .event-title > h4 {
   line-height: 20px;
+  margin-bottom: 0;
 }
 
 .event-circle {
@@ -256,6 +258,11 @@ a, span{
   border-left: 2px solid #b7b7b7;
   margin-left: 9px;
   padding-left: 20px;
+  padding-bottom: 3px;
+}
+
+.event-details > h5 {
+  margin-top: 5px;
 }
 
 

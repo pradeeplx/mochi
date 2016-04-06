@@ -43,9 +43,9 @@ NavBar.defaultProps = {
   navID: 'navbar',
   navItems: [
     'Dashboard',
+    'Contacts',
+    'Groups',
     'Settings',
-    'Profile',
-    'Help',
   ],
 };
 
