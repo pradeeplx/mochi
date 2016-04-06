@@ -6,9 +6,7 @@ export const NavToggle = ({ target }) =>
   <button type="button"
     className="navbar-toggle collapsed"
     data-toggle="collapse"
-    data-target={`${target}`}
-    aria-expanded="false"
-    aria-controls={target}
+    data-target={`#${target}`}
   >
     <span className="sr-only">Toggle navigation</span>
     <span className="icon-bar"></span>

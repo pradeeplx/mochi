@@ -227,6 +227,11 @@ a, span{
   padding-right: 0;
 }
 
+/* MODAL */
+.modal-content {
+  border: 3px solid #057bdf;
+  border-radius: 0;
+}
 
 
 

@@ -1,8 +1,8 @@
 'use strict';
 
 import React from 'react'; // eslint-disable-line no-unused-vars
-import Timeline from '../components/Timeline';
-import Profile from '../components/Profile';
+import Timeline from '../components/Timeline/Timeline';
+import Profile from '../components/Profile/Profile';
 
 export const UserProfile = () =>
   <div>

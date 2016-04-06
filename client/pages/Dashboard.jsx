@@ -2,10 +2,11 @@
 
 import React from 'react'; // eslint-disable-line no-unused-vars
 import NavBar from '../components/NavBar';
-import SideBar from '../components/SideBar';
+import SideBar from '../components/NavBar/SideBar';
 import UserProfile from '../pages/UserProfile';
+import Modal from '../components/Modal';
 
-export const Dashboard = () =>
+export const Dashboard = () => (
   <div>
     <NavBar brandName="Mochi" />
     <section id="main-container" className="container-fluid">
@@ -17,6 +18,6 @@ export const Dashboard = () =>
         </section>
       </div>
     </section>
-  </div>;
+  </div>);
 
 export default Dashboard;
