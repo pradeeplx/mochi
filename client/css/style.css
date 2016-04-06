@@ -113,6 +113,7 @@ a, span{
     position: absolute;
     top: 50px;
     bottom: 0;
+    overflow-x: visible;
     overflow-y: scroll;
   }
 }
@@ -155,11 +156,49 @@ a, span{
   display: inline-block;
 }
 
-.avatar > .btn {
-    background: #ace094;
-    color: #ffffff;
-    float: right;
-    margin-top: 50px;
+.btn-primary {
+  background: #ace094;
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited {
+   background: #5cc32d;
+}
+
+.open >.dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:active,
+.open > .dropdown-toggle.btn-primary:visited 
+.btn-primary.active.focus, 
+.btn-primary.active:focus, 
+.btn-primary.active:hover, 
+.btn-primary:active.focus, 
+.btn-primary:active:focus, 
+.btn-primary:active:hover {
+   background: #5cc32d;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; 
+}
+
+.dropdown:hover .btn {
+  background: #5cc32d;
+}
+
+.avatar .dropdown {
+  background: #ace094;
+  color: #ffffff;
+  float: right;
+  margin-top: 50px;
+}
+
+.dropdown-menu {
+  margin-top: 0;
 }
 
 .avatar > .btn:hover {
