@@ -34,6 +34,7 @@ export class Event extends React.Component {
 Event.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
+  category: PropTypes.string,
   children: PropTypes.string,
 };
 
