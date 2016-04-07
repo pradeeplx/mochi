@@ -2,29 +2,14 @@
 
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import Button from '../../components/Button/Button';
+import Dropdown from '../../components/Button/Dropdown';
 import Modal from '../../components/Modal';
 
 export const Avatar = ({ children }) =>
   <section className="avatar">
     <div className="profile-img"></div>
     <h1>{children}</h1>
-    <div className="dropdown">
-      <Button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu">
-        Add New &nbsp;
-        <span className="caret"></span>
-      </Button>
-      <ul className="dropdown-menu">
-        <li>
-          <a href="#" data-toggle="modal" data-target="#modal">Donation</a>
-        </li>
-        <li>
-          <a href="#" data-toggle="modal" data-target="#modal">Event</a>
-        </li>
-        <li>
-          <a href="#" data-toggle="modal" data-target="#modal">Note</a>
-        </li>
-      </ul>
-    </div>
+    <Dropdown id="addItem" title="Add New" />
     <Modal title="Add Donation">
       {/* TODO: Render different form based on button clicked */}
       <form role="form">

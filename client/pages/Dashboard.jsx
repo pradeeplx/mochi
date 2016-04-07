@@ -5,7 +5,6 @@ import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
 import UserProfile from '../pages/UserProfile';
 import Contacts from '../pages/Contacts';
-import Modal from '../components/Modal';
 
 export const Dashboard = () => (
   <div>
