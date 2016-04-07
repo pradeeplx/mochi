@@ -9,9 +9,9 @@ import Profile from '../components/Profile/Profile';
 export const UserProfile = () =>
   <div>
     <NavBar brandName="Mochi" />
+    <SideBar />
     <section id="main-container" className="container-fluid">
       <div className="row">
-        <SideBar />
         <Profile name="Gideon Glass" />
         <Timeline />
       </div>
