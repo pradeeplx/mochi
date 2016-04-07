@@ -2,7 +2,7 @@
 
 import React from 'react'; // eslint-disable-line no-unused-vars
 import NavBar from '../components/NavBar';
-import SideBar from '../components/Navbar/SideBar';
+import SideBar from '../components/NavBar/SideBar';
 import Timeline from '../components/Timeline/Timeline';
 // import Profile from '../components/Profile/Profile';
 import { Profile } from '../containers';
