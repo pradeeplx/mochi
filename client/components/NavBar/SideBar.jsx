@@ -30,7 +30,9 @@ SideBar.propTypes = {
 SideBar.defaultProps = {
   navID: 'navbar',
   navItems: [
-    'Dashboard',
+    <div>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </div>,
     'Contacts',
     'Groups',
     'Settings',
