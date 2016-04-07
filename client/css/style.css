@@ -110,7 +110,7 @@ a, span{
   }
 }
 @media (min-width: 992px){
-  .profile {
+  .profile, .donors {
     position: absolute;
     top: 50px;
     bottom: 0;
@@ -147,7 +147,7 @@ a, span{
 
 /* PROFILE */
 
-.profile {
+.profile, .donors {
   border: 8px solid #e5e5e5;
   border-bottom: none;
 }
@@ -279,6 +279,9 @@ a, span{
   border-radius: 0;
 }
 
+.input-group {
+  margin-bottom: 30px;
+}
 
 
 

@@ -4,6 +4,7 @@ import React from 'react'; // eslint-disable-line no-unused-vars
 import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
 import UserProfile from '../pages/UserProfile';
+import Contacts from '../pages/Contacts';
 import Modal from '../components/Modal';
 
 export const Dashboard = () => (
@@ -14,7 +15,8 @@ export const Dashboard = () => (
         <SideBar />
         <section id="content-area">
           {/* TODO: Swap out main content area based on nav menu */}
-          <UserProfile />
+          {/* <UserProfile /> */}
+          <Contacts />
         </section>
       </div>
     </section>
