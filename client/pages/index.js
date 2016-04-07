@@ -1,5 +1,6 @@
-import UserProfile from './UserProfile';
+import App from './AppPage';
+import Profile from './Profile';
 import Dashboard from './Dashboard';
 import Contacts from './Contacts';
 
-export { UserProfile, Dashboard, Contacts };
+export { App, Profile, Dashboard, Contacts };

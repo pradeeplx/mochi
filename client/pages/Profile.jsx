@@ -7,16 +7,16 @@ import Timeline from '../components/Timeline/Timeline';
 // import Profile from '../components/Profile/Profile';
 import { Profile } from '../containers';
 
-export const UserProfile = () =>
+export const ProfilePage = () =>
   <div>
     <NavBar brandName="Mochi" />
     <SideBar />
     <section id="main-container" className="container-fluid">
       <div className="row">
-        <Profile name="Gideon Glass" />
+        <Profile />
         <Timeline />
       </div>
     </section>
   </div>;
 
-export default UserProfile;
+export default ProfilePage;

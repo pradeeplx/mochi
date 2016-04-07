@@ -4,7 +4,7 @@ import { fetchUser } from '../actions/actioncreators';
 import Profile from '../components/Profile';
 
 export const ProfileContainer = connect(
-  state => (state),
+  state => ({ profile: state.userProfile, events: state.userEvents }),
   dispatch => ({ actions: bindActionCreators({ fetchUser }, dispatch) })
 )(Profile);
 

@@ -1,4 +1,4 @@
-import React from 'react'; // eslint-disable-line no-unused-vars
+import React from 'react';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
 import Donors from '../components/Donors';

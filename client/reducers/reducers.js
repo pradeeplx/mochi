@@ -9,10 +9,10 @@ const defaultUserContact = {
   state: null,
 };
 
-export const userContact = (state = defaultUserContact, action) => {
+export const userProfile = (state = defaultUserContact, action) => {
   switch (action.type) {
     case actions.RECEIVE_USER:
-      return action.user;
+      return action.user.profile;
     default:
       return state;
   }
@@ -21,12 +21,17 @@ export const userContact = (state = defaultUserContact, action) => {
 const defaultUserEvents = [];
 
 export const userEvents = (state = defaultUserEvents, action) => {
-  // TODO
+  switch (action.type) {
+    case actions.RECEIVE_USER:
+      return action.user.events;
+    default:
+      return state;
+  }
 };
 
-const defaultEvent = {
-  date: null,
-  category: null,
-  description: null,
-  amount: null,
-};
+// const defaultEvent = {
+//   date: null,
+//   category: null,
+//   description: null,
+//   amount: null,
+// };
