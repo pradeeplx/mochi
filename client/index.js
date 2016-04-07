@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import store from './store';
 import Root from './containers/Root';
 
-import './css/style.css';
-
-ReactDOM.render(<Root store={store} />, document.getElementById('app'));
+ReactDOM.render(
+  <Root store={store} />,
+  document.getElementById('app')
+);

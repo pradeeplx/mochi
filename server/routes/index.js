@@ -6,7 +6,9 @@ const router = express.Router();
 const config = require('../config');
 
 router.get('*', (req, res) => {
-  res.sendFile(path.join(config.PUBLIC_PATH, 'index.html'));
+  const fileName = path.join(config.PUBLIC_PATH, 'index.html');
+  console.log('catchall request', req.url, fileName);
+  res.sendFile(fileName);
 });
 
 module.exports = router;
