@@ -71,6 +71,12 @@ a, span{
   }
 }
 
+.sidebar-icon {
+  display: block;
+  font-size: 150%;
+  padding: 10px;
+}
+
 /* Sidebar navigation */
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */

@@ -6,7 +6,7 @@ export const NavItem = ({ children }) =>
   <li><a href="#">{children}</a></li>;
 
 NavItem.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.object,
 };
 
 export default NavItem;
