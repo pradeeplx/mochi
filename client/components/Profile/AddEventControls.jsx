@@ -12,7 +12,7 @@ export class AddEventControls extends React.Component {
   render() {
     return (
       <div className="event-controls">
-        <Modal title="Add Donation">
+        <Modal id="modal" title="Add Donation">
           {/* TODO: Render different form based on button clicked */}
           <form role="form">
             <div className="form-group">

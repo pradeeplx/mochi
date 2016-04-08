@@ -4,8 +4,8 @@ import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import ModalHeader from '../components/ModalHeader';
 import ModalBody from '../components/ModalBody';
 
-export const Modal = ({ title, children }) => (
-  <div id="modal" className="modal fade" role="dialog">
+export const Modal = ({ id, title, children }) => (
+  <div id={id} className="modal fade" role="dialog">
     <div className="modal-dialog">
       <div className="modal-content">
         <ModalHeader title={title} />
@@ -15,6 +15,7 @@ export const Modal = ({ title, children }) => (
   </div>);
 
 Modal.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
   children: PropTypes.object,
 };
