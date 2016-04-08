@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
-import Donors from '../components/Donors';
+import { Donors } from '../containers';
+// import Donors from '../components/Donors';
 
 export const Contacts = () =>
   <div>

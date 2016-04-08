@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import ContactItem from './ContactItem';
 
-export const ContactInfo = ({ email = '', phone = '', twitter = '', city = '' }) =>
+export const ContactInfo = ({ email = '', phone = '', twitter = '', city = '', state = '' }) =>
   <section className="contact-info profile-card">
     <h3>Contact Info</h3>
     <ul className="list-group">
@@ -14,7 +14,7 @@ export const ContactInfo = ({ email = '', phone = '', twitter = '', city = '' })
           {`@${twitter}`}
         </a>
       </ContactItem>
-      <ContactItem field="City">{city}</ContactItem>
+      <ContactItem field="Location">{`${city}, ${state}`}</ContactItem>
     </ul>
   </section>;
 
@@ -23,6 +23,7 @@ ContactInfo.propTypes = {
   phone: PropTypes.string,
   twitter: PropTypes.string,
   city: PropTypes.string,
+  state: PropTypes.string,
 };
 
 export default ContactInfo;
