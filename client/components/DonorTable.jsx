@@ -5,7 +5,7 @@ import DonorRow from '../components/DonorRow';
 
 export class DonorTable extends React.Component {
   componentWillMount() {
-    const { fetchAllUsers } = this.props.actions;
+    const { fetchAllUsers } = this.props;
     fetchAllUsers();
   }
 
@@ -40,7 +40,7 @@ export class DonorTable extends React.Component {
 
 DonorTable.propTypes = {
   users: PropTypes.arrayOf(PropTypes.object),
-  actions: PropTypes.object,
+  fetchAllUsers: PropTypes.function,
 };
 
 export default DonorTable;

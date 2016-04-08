@@ -1,11 +1,11 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchAllUsers } from '../actions/actioncreators';
-import DonorTable from '../components/DonorTable';
+import Donors from '../components/Donors';
 
-export const DonorTableContainer = connect(
+export const DonorsContainer = connect(
   state => ({ users: state.usersList }),
   dispatch => ({ actions: bindActionCreators({ fetchAllUsers }, dispatch) })
-)(DonorTable);
+)(Donors);
 
-export default DonorTableContainer;
+export default DonorsContainer;
