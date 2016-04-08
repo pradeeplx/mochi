@@ -1,5 +1,6 @@
 {
     "profile": {
+        "username": "gglass",
         "email": "gig6@cornell.edu",
         "first": "Gideon",
         "last": "Glass",
@@ -23,8 +24,6 @@
     		"category": "meeting",
     		"description": "Gideon attended CNN Hero award event.",
     		"amount": 490.00
-
     	}
     ]
-
 }
