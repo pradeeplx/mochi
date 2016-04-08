@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { PropTypes } from 'react';
+import Link from 'react-router/lib/Link';
 import NavItem from './NavItem';
 
 export class SideBar extends React.Component {
@@ -30,8 +31,8 @@ SideBar.propTypes = {
 SideBar.defaultProps = {
   navID: 'navbar',
   navItems: [
-    <div><span className="glyphicon glyphicon-home sidebar-icon"></span>Home</div>,
-    <div><span className="glyphicon glyphicon-user sidebar-icon"></span>Donors</div>,
+    <Link to="/"><div><span className="glyphicon glyphicon-home sidebar-icon"></span>Home</div></Link>,
+    <Link to="/contacts"><div><span className="glyphicon glyphicon-user sidebar-icon"></span>Donors</div></Link>,
     <div><span className="glyphicon glyphicon-globe sidebar-icon"></span>Campaigns</div>,
     <div><span className="glyphicon glyphicon-cog sidebar-icon"></span>Settings</div>,
   ],

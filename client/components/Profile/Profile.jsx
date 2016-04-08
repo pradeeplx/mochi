@@ -8,7 +8,8 @@ import ContactInfo from './ContactInfo';
 export class Profile extends React.Component {
   componentWillMount() {
     const { fetchUser } = this.props.actions;
-    fetchUser();
+    const { username = 'unknown' } = this.props;
+    fetchUser(username);
   }
 
   render() {
@@ -27,6 +28,7 @@ export class Profile extends React.Component {
 Profile.propTypes = {
   profile: PropTypes.object,
   events: PropTypes.arrayOf(PropTypes.object),
+  username: PropTypes.string,
   actions: PropTypes.object,
 };
 
