@@ -17,9 +17,9 @@ export class Profile extends React.Component {
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
-        <Avatar>{`${profile.first} ${profile.last}`}</Avatar>
+        <Avatar photo={profile.photo}>{`${profile.first} ${profile.last}`}</Avatar>
         <SummaryStats events={events} />
-        <ContactInfo />
+        <ContactInfo profile={profile} />
       </div>
     );
   }

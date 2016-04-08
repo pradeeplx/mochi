@@ -1,13 +1,12 @@
 'use strict';
 
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
-import Button from '../../components/Button/Button';
 import Dropdown from '../../components/Button/Dropdown';
 import Modal from '../../components/Modal';
 
-export const Avatar = ({ children }) =>
+export const Avatar = ({ photo, children }) =>
   <section className="avatar">
-    <div className="profile-img"></div>
+    <div className="profile-img" style={{ background: 'url(' + photo + ')' + 'no-repeat 50% / cover' }}></div>
     <h1>{children}</h1>
     <Dropdown id="addItem" title="Add New" />
     <Modal title="Add Donation">
@@ -22,11 +21,12 @@ export const Avatar = ({ children }) =>
           <input type="date" className="form-control" id="date" />
         </div>
         <button type="submit" className="btn btn-primary">Save</button>
-      </form>    
+      </form>
     </Modal>
   </section>;
 
 Avatar.propTypes = {
+  photo: PropTypes.string,
   children: PropTypes.string,
 };
 
