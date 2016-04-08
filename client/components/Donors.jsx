@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import DonorTable from '../components/DonorTable';
 import Button from '../components/Button/Button';
 import Modal from '../components/Modal';
+import Link from 'react-router/lib/Link';
 
 export const Donors = ({ users, actions }) =>
   // TODO make these controls a component
@@ -26,7 +27,7 @@ export const Donors = ({ users, actions }) =>
           <label htmlFor="email">Email</label>
           <input type="email" className="form-control" id="email" />
         </div>
-        <button type="submit" className="btn btn-primary">Go!</button>
+        <Link to="/donor/gpass1" className="btn btn-primary">Save</Link>
       </form>
     </Modal>
   </div>;
