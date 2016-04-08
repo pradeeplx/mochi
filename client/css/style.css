@@ -199,7 +199,7 @@ a, span{
   background: #5cc32d;
 }
 
-.avatar .dropdown {
+.profile-header > .event-controls > .dropdown {
   background: #ace094;
   color: #ffffff;
   float: right;
@@ -210,8 +210,16 @@ a, span{
   margin-top: 0;
 }
 
-.avatar > .btn:hover {
+.profile-header > .event-controls > .btn:hover {
   background: #5cc32d;
+}
+
+.event-controls {
+  display: inline;
+}
+
+.avatar {
+  display: inline-block;
 }
 
 
