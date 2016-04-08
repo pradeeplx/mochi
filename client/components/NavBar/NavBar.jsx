@@ -3,6 +3,7 @@
 import React, { PropTypes } from 'react';
 import NavItem from './NavItem';
 import NavToggle from './NavToggle';
+import Link from 'react-router/lib/Link';
 
 export class NavBar extends React.Component {
   getNavItems() {
@@ -19,7 +20,7 @@ export class NavBar extends React.Component {
           <div className="container-fluid">
             <div className="navbar-header">
               <NavToggle target={navID} />
-              <a className="navbar-brand" href="#">{brandName}</a>
+              <Link to="/"><span className="navbar-brand">{brandName}</span></Link>
             </div>
             <div id={navID} className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">

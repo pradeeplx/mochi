@@ -31,10 +31,10 @@ SideBar.propTypes = {
 SideBar.defaultProps = {
   navID: 'navbar',
   navItems: [
-    <Link to="/"><div><span className="glyphicon glyphicon-home sidebar-icon"></span>Home</div></Link>,
-    <Link to="/contacts"><div><span className="glyphicon glyphicon-user sidebar-icon"></span>Donors</div></Link>,
-    <div><span className="glyphicon glyphicon-globe sidebar-icon"></span>Campaigns</div>,
-    <div><span className="glyphicon glyphicon-cog sidebar-icon"></span>Settings</div>,
+    <Link to="/"><span className="glyphicon glyphicon-home sidebar-icon"></span>Home</Link>,
+    <Link to="/contacts"><span className="glyphicon glyphicon-user sidebar-icon"></span>Donors</Link>,
+    <a><span className="glyphicon glyphicon-globe sidebar-icon"></span>Campaigns</a>,
+    <a><span className="glyphicon glyphicon-cog sidebar-icon"></span>Settings</a>,
   ],
 };
 
