@@ -11,4 +11,24 @@ router.get('*', (req, res) => {
   res.sendFile(fileName);
 });
 
+
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

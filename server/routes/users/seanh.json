@@ -1,0 +1,27 @@
+{
+    "profile": {
+        "email": "seanherman@gmail.com",
+        "first": "Sean",
+        "last": "Herman",
+        "twitter": "@seannnnnnnnnnnn",
+        "city": "New York",
+        "state": "NY",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/09a/3d9/213870f.jpg"
+    },
+    "events": [
+    	{
+    		"date": "04/13/2015",
+    		"category": "donation",
+    		"description": "Sean generously donated $120.00 thourgh our fund raising event.",
+    		"amount": "120.00"
+    	},
+    	{
+    		"date": "12/18/2014",
+    		"category": "donation",
+    		"description": "Mr. Herman attended Veteran philanthropy event.",
+    		"amount": "68.00"
+
+    	}
+    ]
+
+}
