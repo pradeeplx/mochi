@@ -3,7 +3,6 @@
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import DonorTable from '../components/DonorTable';
 import Button from '../components/Button/Button';
-// import Dropdown from '../components/Button/Dropdown';
 
 export const Donors = ({ users }) =>
   // TODO make these controls a component

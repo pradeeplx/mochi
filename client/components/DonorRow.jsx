@@ -1,15 +1,22 @@
-'use strict';
+import React, { PropTypes } from 'react';
+import Link from 'react-router/lib/Link';
 
-import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
+// <Link to={`/donor/${username}`}></Link>
 
-export const DonorRow = () =>
+export const DonorRow = ({ first, last, email, city, username }) =>
   <tr>
-    <td>Firstname</td>
-      <td>Lastname</td>
-      <td>Email</td>
+    <td>{first}</td>
+    <td>{last}</td>
+    <td>{email}</td>
+    <td>{city}</td>
   </tr>;
 
 DonorRow.propTypes = {
+  first: PropTypes.string,
+  last: PropTypes.string,
+  email: PropTypes.string,
+  city: PropTypes.string,
+  username: PropTypes.string,
 };
 
 export default DonorRow;

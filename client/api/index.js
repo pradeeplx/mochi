@@ -1,1 +1,1 @@
-export { getUser } from './api';
+export { getUser, getAllUsers } from './api';
