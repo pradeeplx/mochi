@@ -7,7 +7,8 @@ export const getDonorOriginYear = createSelector(
   (userEvents) => {
     let result;
     if (userEvents && userEvents.length) {
-      result = new Date(userEvents[0].date);
+      const lastIndex = userEvents.length - 1;
+      result = new Date(userEvents[lastIndex].date);
     } else {
       result = new Date();
     }
