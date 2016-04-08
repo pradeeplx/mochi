@@ -139,6 +139,7 @@ a, span{
 
 .dashboard-img {
   width: 100%;
+  padding-right: 200px;
 }
 
 
@@ -292,9 +293,7 @@ a, span{
 }
 
 .addDonor {
-  float: right;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 
