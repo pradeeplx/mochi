@@ -1,0 +1,31 @@
+{
+    "profile": {
+        "email": "gregpass@cornell.edu",
+        "first": "Greg",
+        "last": "Pass",
+        "username": "gpasscornell",
+        "twitter": "gregpass",
+        "phoneNumber": "912-902-3122",
+        "city":"New York",
+        "state": "NY",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/0c0/142/02414b7.jpg"
+    },
+    "events": [
+    	{
+            "title": "Donated",
+    		"date": "03/19/2016",
+    		"category": "donation",
+    		"description": "Mr. Pass kindly put $30.00 for tech startup founders meeting.",
+    		"amount": 3000.00
+    	},
+    	{
+            "title": "Attended Award Event",
+    		"date": "11/13/2015",
+    		"category": "meeting",
+    		"description": "Greg Pass attend Cornell University annual philanthropy event.",
+    		"amount": 200.00
+
+    	}
+    ]
+
+}
