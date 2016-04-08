@@ -9,4 +9,24 @@ router.get('/', (req, res) => {
   res.sendFile(path.join(config.PUBLIC_PATH, 'index.html'));
 });
 
+
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
