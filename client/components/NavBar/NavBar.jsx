@@ -34,19 +34,14 @@ export class NavBar extends React.Component {
 
 NavBar.propTypes = {
   navID: PropTypes.string,
-  navItems: PropTypes.arrayOf(PropTypes.string),
+  navItems: PropTypes.arrayOf(PropTypes.object),
   brandName: PropTypes.string,
 };
 
 NavBar.defaultProps = {
   brandName: 'Mochi',
   navID: 'navbar',
-  navItems: [
-    'Dashboard',
-    'Contacts',
-    'Groups',
-    'Settings',
-  ],
+  navItems: [],
 };
 
 export default NavBar;

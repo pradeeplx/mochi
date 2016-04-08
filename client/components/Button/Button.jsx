@@ -15,7 +15,7 @@ Button.propTypes = {
   className: PropTypes.string,
   toggle: PropTypes.string,
   target: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 
 export default Button;

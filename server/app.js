@@ -24,10 +24,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('less-middleware')(config.PUBLIC_PATH));
-app.use(express.static(config.PUBLIC_PATH));
+app.use('/', express.static(config.PUBLIC_PATH));
 
-app.use('/', routes);
 app.use('/users', users);
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

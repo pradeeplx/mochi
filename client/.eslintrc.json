@@ -1,7 +1,8 @@
 {
-  "extends": "../.eslintrc.json",
+  "extends": ["../.eslintrc.json", "plugin:react/recommended"],
   "globals": {
-    "process": true
+    "process": true,
+    "module": true
   },
   "env": {
     "browser": true,
@@ -9,6 +10,7 @@
     "node": false
   },
   "parser": "babel-eslint",
+  "plugins": ["babel", "react"],
   "rules": {
     "strict": 0,
     "no-console": 1
@@ -20,6 +22,5 @@
       "jsx": true,
       "experimentalObjectRestSpread": true
     }
-  },
-  "plugins": ["react"]
+  }
 }

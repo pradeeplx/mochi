@@ -3,8 +3,10 @@
 import 'babel-polyfill';
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ReactDOM from 'react-dom';
-import UserProfile from './pages/UserProfile';
+import store from './store';
+import Root from './containers/Root';
 
-import './css/style.css';
-
-ReactDOM.render(<UserProfile />, document.getElementById('app'));
+ReactDOM.render(
+  <Root store={store} />,
+  document.getElementById('app')
+);
