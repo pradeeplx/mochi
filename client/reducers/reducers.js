@@ -31,16 +31,14 @@ export const userEvents = (state = defaultUserEvents, action) => {
 
 export const usersList = (state = [], action) => {
   switch (action.type) {
-    case actions.RECEIVE_ALL_USERS:
-      return action.users;
+    case actions.RECEIVE_ALL_USERS: {
+      if (action.users) {
+        return action.users.filter(user =>
+          user.profile.username !== 'gpasscornell');
+      }
+      return [];
+    }
     default:
       return state;
   }
 };
-
-// const defaultEvent = {
-//   date: null,
-//   category: null,
-//   description: null,
-//   amount: null,
-// };
