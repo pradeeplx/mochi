@@ -4,13 +4,9 @@ import AddEventControls from './AddEventControls';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
 
-const GPASS_DELAY = 1000;
+const GPASS_DELAY = 6500;
 
 export class Profile extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { loadedGreg: false };
-  // }
 
   componentWillMount() {
     const { fetchUser } = this.props.actions;
@@ -48,6 +44,13 @@ export class Profile extends React.Component {
       );
     }
 
+    let gpassBoring = <span></span>;
+    if (username === 'gpass1' && !profile.photo) {
+      gpassBoring = (
+        <div><img src="/images/ANIMATION.gif" /></div>
+      );
+    }
+
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
         <div className="profile-header">
@@ -56,6 +59,7 @@ export class Profile extends React.Component {
           </Avatar>
           <AddEventControls />
         </div>
+        {gpassBoring}
         <SummaryStats
           sinceYear={originYear}
           lastDate={lastInteraction}
