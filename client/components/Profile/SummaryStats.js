@@ -6,7 +6,7 @@ export const SummaryStats = ({ sinceYear, lastDate, lastAmount, totalAmount }) =
     <StatItem size="3" header="Donor Since:" detail={sinceYear} />
     <StatItem size="3" header="Last Interaction:" detail={lastDate} />
     <StatItem size="3" header="Last Donation:" detail={`$${lastAmount}`} />
-    <StatItem size="3" header="YTD Total:" detail={`$${totalAmount}`} />
+    <StatItem size="3" header="Giving Total:" detail={`$${totalAmount}`} />
   </section>;
 
 SummaryStats.propTypes = {
