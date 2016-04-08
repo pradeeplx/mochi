@@ -12,7 +12,7 @@ const defaultUserContact = {
 export const userProfile = (state = defaultUserContact, action) => {
   switch (action.type) {
     case actions.RECEIVE_USER:
-      return action.user.profile;
+      return action.user ? action.user.profile : defaultUserContact;
     default:
       return state;
   }
@@ -23,7 +23,7 @@ const defaultUserEvents = [];
 export const userEvents = (state = defaultUserEvents, action) => {
   switch (action.type) {
     case actions.RECEIVE_USER:
-      return action.user.events;
+      return action.user ? action.user.events : defaultUserEvents;
     default:
       return state;
   }

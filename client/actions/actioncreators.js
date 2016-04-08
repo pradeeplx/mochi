@@ -14,9 +14,6 @@ export const receiveUser = (user) => ({
 export const fetchUser = (username) =>
   dispatch => {
     dispatch(requestUser());
-    // TODO: use promise when real fetches are happening
-    // const user = api.getUser(username);
-    // dispatch(receiveUser(user));
     return api.getUser(username)
     .then(user => dispatch(receiveUser(user)));
   };
