@@ -12,19 +12,26 @@ export class Profile extends React.Component {
 
   render() {
     const {
-      profile, originYear, lastInteraction, lastDonation, totalDonations,
+      profile = {}, originYear, lastInteraction, lastDonation, totalDonations,
     } = this.props;
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
-        <Avatar>{`${profile.first} ${profile.last}`}</Avatar>
+        <Avatar photo={profile.photo}>
+          {`${profile.first} ${profile.last}`}
+        </Avatar>
         <SummaryStats
           sinceYear={originYear}
           lastDate={lastInteraction}
           lastAmount={lastDonation}
           totalAmount={totalDonations}
         />
-        <ContactInfo />
+        <ContactInfo
+          email={profile.email}
+          phone={profile.phone}
+          twitter={profile.twitter}
+          city={profile.city}
+        />
       </div>
     );
   }
