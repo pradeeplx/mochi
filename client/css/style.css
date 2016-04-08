@@ -181,18 +181,18 @@ a, span{
 .open > .dropdown-toggle.btn-primary:hover,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:active,
-.open > .dropdown-toggle.btn-primary:visited 
-.btn-primary.active.focus, 
-.btn-primary.active:focus, 
-.btn-primary.active:hover, 
-.btn-primary:active.focus, 
-.btn-primary:active:focus, 
+.open > .dropdown-toggle.btn-primary:visited
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
 .btn-primary:active:hover {
    background: #5cc32d;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block; 
+  display: block;
 }
 
 .dropdown:hover .btn {

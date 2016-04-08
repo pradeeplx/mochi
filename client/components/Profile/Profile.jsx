@@ -12,6 +12,7 @@ export class Profile extends React.Component {
   }
 
   render() {
+    // console.log('YOLO');
     const {
       profile = {}, originYear, lastInteraction, lastDonation, totalDonations,
     } = this.props;
@@ -35,6 +36,7 @@ export class Profile extends React.Component {
           phone={profile.phoneNumber}
           twitter={profile.twitter}
           city={profile.city}
+          state={profile.state}
         />
       </div>
     );
