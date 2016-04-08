@@ -1,28 +1,34 @@
 const path = require('path');
+const debug = require('debug')('users');
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 
-/* GET users listing. */
-router.get('/', (req, res, next) => {
-  return res.send('respond with a resource');
-});
 router.get('/:username', (req, res, next) => {
     const username = req.params.username || 'unknown';
-    console.log(`Req for username ${username}`);
+    debug(`Req for username ${username}`);
       // check if file exists
       // if it does 
       const filePath = path.join(__dirname, 'users', `${username}.json`);
       fs.stat(filePath, (err, stats) => {
         if (err) {
-            console.log('Username does not exist')
+            debug('Username does not exist')
             // username doesn't exist
             return res.json({});
         }
         const user = require(filePath);
-        console.log('Username exists', user);
-          return res.json(user);
+        return res.json(user);
     });
+});
+
+router.get('/', (req, res) => {
+  const userPath = path.join(__dirname, 'users');
+
+  fs.readdir(userPath, (err, files) => {
+    if (err) return console.error(err);
+    const result = files.map(file => require(path.join(userPath, file)));
+    res.json(result);
+  });
 });
 
 router.get('/:username', (req, res, next) => {
