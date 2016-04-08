@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import SummaryStats from './SummaryStats';
@@ -13,13 +11,27 @@ export class Profile extends React.Component {
   }
 
   render() {
-    const { profile, events } = this.props;
+    const {
+      profile = {}, originYear, lastInteraction, lastDonation, totalDonations,
+    } = this.props;
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
-        <Avatar>{`${profile.first} ${profile.last}`}</Avatar>
-        <SummaryStats events={events} />
-        <ContactInfo />
+        <Avatar photo={profile.photo}>
+          {`${profile.first} ${profile.last}`}
+        </Avatar>
+        <SummaryStats
+          sinceYear={originYear}
+          lastDate={lastInteraction}
+          lastAmount={lastDonation}
+          totalAmount={totalDonations}
+        />
+        <ContactInfo
+          email={profile.email}
+          phone={profile.phone}
+          twitter={profile.twitter}
+          city={profile.city}
+        />
       </div>
     );
   }
@@ -27,7 +39,10 @@ export class Profile extends React.Component {
 
 Profile.propTypes = {
   profile: PropTypes.object,
-  events: PropTypes.arrayOf(PropTypes.object),
+  originYear: PropTypes.number,
+  lastInteraction: PropTypes.string,
+  lastDonation: PropTypes.number,
+  totalDonations: PropTypes.number,
   username: PropTypes.string,
   actions: PropTypes.object,
 };
