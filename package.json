@@ -6,6 +6,7 @@
   "scripts": {
     "prestart": "npm run build",
     "start": "node server",
+    "start:dev": "nodemon server",
     "build:static": "cp client/index.html public && cp -rf client/css public",
     "build:js": "webpack --progress --colors",
     "build": "npm run build:static && npm run build:js",
@@ -37,6 +38,7 @@
     "eslint-plugin-babel": "^3.1.0",
     "eslint-plugin-react": "^4.2.3",
     "html-webpack-plugin": "^2.15.0",
+    "nodemon": "^1.9.1",
     "redux-devtools": "^3.2.0",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.9",
