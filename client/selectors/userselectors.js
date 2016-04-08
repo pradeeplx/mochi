@@ -26,8 +26,7 @@ export const getDonorLastDate = createSelector(
   (userEvents) => {
     let result;
     if (userEvents && userEvents.length) {
-      const lastIndex = userEvents.length - 1;
-      result = new Date(userEvents[lastIndex].date);
+      result = new Date(userEvents[0].date);
     } else {
       result = new Date();
     }
@@ -47,8 +46,7 @@ export const getDonorLastDonation = createSelector(
   [getDonorDonations],
   (donations) => {
     if (donations && donations.length) {
-      const lastIndex = donations.length - 1;
-      return Number.parseFloat(donations[lastIndex].amount);
+      return Number.parseFloat(donations[0].amount);
     }
     return 0.0;
   }
