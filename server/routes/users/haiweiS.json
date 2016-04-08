@@ -1,0 +1,28 @@
+{
+    "profile": {
+        "email": "haiwei93@gmail.com",
+        "first": "Haiwei",
+        "last": "Su",
+        "twitter": "@haiweisu",
+        "phone-number": "614-313-3699",
+        "city":"New York",
+        "state": "NY",
+        "photo": "https://pbs.twimg.com/profile_images/635828551938375680/bKLUkFcF.jpg"
+    },
+    "events": [
+    	{
+    		"date": "11/28/2015",
+    		"category": "donation",
+    		"description": "Haiwei kindly put $48.00 for cancer research.",
+    		"amount": "48.00"
+    	},
+    	{
+    		"date": "02/18/2015",
+    		"category": "meeting",
+    		"description": "Mr. Su attended CharityWater fund rasing event.",
+    		"amount": "$200.00"
+
+    	}
+    ]
+
+}
