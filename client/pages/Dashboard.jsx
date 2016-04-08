@@ -9,7 +9,7 @@ export const Dashboard = () =>
     <section id="main-container" className="container-fluid">
       <div className="row">
         <div className="col-md-11 col-md-offset-1">
-          <img className="img-responsive" src="./images/dashboard.png" />
+          <img className="img-responsive dashboard-img" src="./images/dashboard.png" />
         </div>
       </div>
     </section>
