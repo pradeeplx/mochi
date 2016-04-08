@@ -4,18 +4,49 @@ import AddEventControls from './AddEventControls';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
 
+const GPASS_DELAY = 1000;
+
 export class Profile extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { loadedGreg: false };
+  // }
+
   componentWillMount() {
     const { fetchUser } = this.props.actions;
     const { username = 'unknown' } = this.props;
     fetchUser(username);
+    if (username === 'gpass1') {
+      window.setTimeout(() => {
+        fetchUser('gpass2');
+      }, GPASS_DELAY);
+    }
   }
 
   render() {
-    // console.log('YOLO');
     const {
-      profile = {}, originYear, lastInteraction, lastDonation, totalDonations,
+      profile = {},
+      originYear,
+      lastInteraction,
+      lastDonation,
+      totalDonations,
+      username,
     } = this.props;
+    // <img src="/images/ANIMATION.gif" />
+
+    let gpassFancy = <span></span>;
+    if (username === 'gpass1' && profile.photo) {
+      gpassFancy = (
+        <div className="row">
+          <div className="col-md-6">
+            <img className="img-responsive" src="/images/box1b.png" />
+          </div>
+          <div className="col-md-6">
+            <img className="img-responsive" src="/images/box2.png" />
+          </div>
+        </div>
+      );
+    }
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
@@ -38,6 +69,7 @@ export class Profile extends React.Component {
           city={profile.city}
           state={profile.state}
         />
+        {gpassFancy}
       </div>
     );
   }
