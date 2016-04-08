@@ -23,7 +23,11 @@
     		"date": "02/18/2015",
     		"category": "meeting",
     		"description": "Mr. Su attended CharityWater fund rasing event.",
+<<<<<<< HEAD:server/routes/users/haiweiS.json
+    		"amount": "$199.00"
+=======
     		"amount": 200.00
+>>>>>>> 2f8360a56c83876d689a34b79c32720c8a3914a9:server/routes/users/hsu.json
 
     	}
     ]

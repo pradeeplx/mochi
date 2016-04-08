@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
+import AddEventControls from './AddEventControls';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
 
@@ -18,9 +19,12 @@ export class Profile extends React.Component {
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
-        <Avatar photo={profile.photo}>
-          {`${profile.first} ${profile.last}`}
-        </Avatar>
+        <div className="profile-header">
+          <Avatar photo={profile.photo}>
+            {`${profile.first} ${profile.last}`}
+          </Avatar>
+          <AddEventControls />
+        </div>
         <SummaryStats
           sinceYear={originYear}
           lastDate={lastInteraction}

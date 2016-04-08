@@ -13,7 +13,7 @@ export const Dropdown = ({ id, title }) => (
     <ul className="dropdown-menu">
       <DropdownItem link="#" toggle="modal" target="#modal">Donation</DropdownItem>
       <DropdownItem link="#" toggle="modal" target="#modal">Event</DropdownItem>
-      <DropdownItem link="#" toggle="modal" target="#modal">Note</DropdownItem>
+      <DropdownItem link="#" toggle="modal" target="#modal">Meeting</DropdownItem>
     </ul>
   </div>
 );
