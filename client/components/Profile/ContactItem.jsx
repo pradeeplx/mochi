@@ -10,7 +10,7 @@ export const ContactItem = ({ field, children }) =>
 
 ContactItem.propTypes = {
   field: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string,
 };
 
 export default ContactItem;

@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import SummaryStats from './SummaryStats';

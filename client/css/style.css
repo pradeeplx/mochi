@@ -223,6 +223,9 @@ a, span{
   float: left;
   margin-top: 20px;
   margin-right: 25px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .profile-card {
