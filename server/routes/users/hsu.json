@@ -4,23 +4,29 @@
         "first": "Haiwei",
         "last": "Su",
         "twitter": "haiweisu",
-        "phone-number": "614-313-3699",
+        "phoneNumber": "614-313-3699",
         "city":"New York",
         "state": "NY",
         "photo": "https://pbs.twimg.com/profile_images/635828551938375680/bKLUkFcF.jpg"
     },
     "events": [
     	{
+            "title": "Donated",
     		"date": "11/28/2015",
     		"category": "donation",
     		"description": "Haiwei kindly put $48.00 for cancer research.",
-    		"amount": "48.00"
+    		"amount": 48.00
     	},
     	{
+            "title": "Attended CharityWater Event",
     		"date": "02/18/2015",
     		"category": "meeting",
     		"description": "Mr. Su attended CharityWater fund rasing event.",
+<<<<<<< HEAD:server/routes/users/haiweiS.json
     		"amount": "$199.00"
+=======
+    		"amount": 200.00
+>>>>>>> 2f8360a56c83876d689a34b79c32720c8a3914a9:server/routes/users/hsu.json
 
     	}
     ]

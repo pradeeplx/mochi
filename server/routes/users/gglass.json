@@ -4,23 +4,25 @@
         "first": "Gideon",
         "last": "Glass",
         "twitter": "gidglass",
-        "phone-number": "912-902-3122",
+        "phoneNumber": "912-902-3122",
         "city":"New York",
         "state": "NY",
         "photo": "https://pbs.twimg.com/profile_images/1592795175/image.jpg"
     },
     "events": [
     	{
+            "title": "Donated",
     		"date": "03/19/2016",
     		"category": "donation",
     		"description": "Mr. Glass kindly put $30.00 for cancer research.",
-    		"amount": "30.00"
+    		"amount": 30.00
     	},
     	{
+            "title": "Attended Award Event",
     		"date": "11/13/2015",
     		"category": "meeting",
     		"description": "Gideon attended CNN Hero award event.",
-    		"amount": "$490.00"
+    		"amount": 490.00
 
     	}
     ]

@@ -28,7 +28,7 @@ export class Profile extends React.Component {
         />
         <ContactInfo
           email={profile.email}
-          phone={profile.phone}
+          phone={profile.phoneNumber}
           twitter={profile.twitter}
           city={profile.city}
         />

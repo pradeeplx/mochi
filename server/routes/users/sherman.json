@@ -4,24 +4,24 @@
         "first": "Sean",
         "last": "Herman",
         "twitter": "seannnnnnnnnnnn",
-        "phone-number": "516-378-9023",
+        "phoneNumber": "516-378-9023",
         "city": "New York",
         "state": "NY",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/09a/3d9/213870f.jpg"
     },
     "events": [
     	{
+            "title": "Donated",
     		"date": "04/13/2015",
     		"category": "donation",
     		"description": "Sean provides funding to help purchase new music for the various musical groups at Beth Am.",
-    		"amount": "120.00"
+    		"amount": 120.00
     	},
     	{
+            "title": "Attended Veterans Event",
     		"date": "12/18/2014",
-    		"category": "donation",
-    		"description": "Mr. Herman attended Veteran philanthropy event.",
-    		"amount": "68.00"
-
+    		"category": "event",
+    		"description": "Mr. Herman attended Veteran philanthropy event."
     	}
     ]
 

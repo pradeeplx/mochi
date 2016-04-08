@@ -8,8 +8,8 @@ export const Dashboard = () =>
     <SideBar />
     <section id="main-container" className="container-fluid">
       <div className="row">
-        <div className="col-md-7 col-md-offset-1 main profile">
-          <h1>Dashboard</h1>
+        <div className="col-md-11 col-md-offset-1">
+          <img className="img-responsive" src="./images/dashboard.png" />
         </div>
       </div>
     </section>
