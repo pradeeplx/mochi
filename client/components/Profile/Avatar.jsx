@@ -6,7 +6,7 @@ import Modal from '../../components/Modal';
 
 export const Avatar = ({ photo, children }) =>
   <section className="avatar">
-    <div className="profile-img" style={{ background: 'url(' + photo + ')' + 'no-repeat 50% / cover' }}></div>
+    <div className="profile-img" style={{ background: 'url(' + photo + ')' + '#b7b7b7 no-repeat 50% / cover' }}></div>
     <h1>{children}</h1>
   </section>;
 
