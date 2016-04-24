@@ -1,29 +1,26 @@
 'use strict';
 
 const path = require('path');
+require('app-module-path').addPath(path.join(__dirname, '..'));
+
 const express = require('express');
-const debug = require('debug')('mochi:server');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const config = require('./config');
+const config = require('config');
+const log = require('server/loggers');
 
-const routes = require('./routes/index');
-const users = require('./routes/users');
+const routes = require('server/routes/index');
+const users = require('server/routes/users');
 
-debug('booting Mochi');
+log.info('Starting Mochi server');
 
 const app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hjs');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('less-middleware')(config.PUBLIC_PATH));
 app.use('/', express.static(config.PUBLIC_PATH));
 
 app.use('/users', users);
@@ -35,8 +32,6 @@ app.use((req, res, next) => {
   err.status = 404;
   next(err);
 });
-
-// error handlers
 
 // development error handler
 // will print stacktrace
@@ -61,7 +56,7 @@ app.use((err, req, res) => {
 });
 
 app.listen(config.LISTEN_PORT, config.LISTEN_HOST, () => {
-  debug(`listening on ${config.LISTEN_HOST}:${config.LISTEN_HOST}`);
+  log.info(`listening on ${config.LISTEN_HOST}:${config.LISTEN_HOST}`);
 });
 
 module.exports = app;

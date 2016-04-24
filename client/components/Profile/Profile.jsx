@@ -3,6 +3,9 @@ import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
+import ImgAnimation from '../../assets/ANIMATION.gif';
+import ImgBox1B from '../../assets/box1b.png';
+import ImgBox2B from '../../assets/box2b.png';
 
 const GPASS_DELAY = 6500;
 
@@ -28,17 +31,16 @@ export class Profile extends React.Component {
       totalDonations,
       username,
     } = this.props;
-    // <img src="/images/ANIMATION.gif" />
 
     let gpassFancy = <span></span>;
     if (username === 'gpass1' && profile.photo) {
       gpassFancy = (
         <div className="row">
           <div className="col-md-6">
-            <img className="img-responsive" src="/images/box1b.png" />
+            <img className="img-responsive" src={`/${ImgBox1B}`} />
           </div>
           <div className="col-md-6">
-            <img className="img-responsive" src="/images/box2.png" />
+            <img className="img-responsive" src={`/${ImgBox2B}`} />
           </div>
         </div>
       );
@@ -47,7 +49,7 @@ export class Profile extends React.Component {
     let gpassBoring = <span></span>;
     if (username === 'gpass1' && !profile.photo) {
       gpassBoring = (
-        <div><img src="/images/ANIMATION.gif" /></div>
+        <div><img src={`/${ImgAnimation}`} /></div>
       );
     }
 
