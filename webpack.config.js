@@ -42,7 +42,6 @@ module.exports = {
       title: 'Mochi',
       favicon: './assets/favicon.ico',
       template: './index-template.html',
-      filename: 'index.html',
     }),
     new CleanWebpackPlugin(['public'], {
       root: __dirname,
