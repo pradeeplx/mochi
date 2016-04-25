@@ -13,21 +13,17 @@ const log = require('server/loggers');
 // TODO: use googleauth.client to make API calls
 const googleauth = require('server/mail/googleauth');
 
-const routes = require('server/routes/index');
-const users = require('server/routes/users');
-
 log.info('Starting Mochi server');
-
 const app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/', express.static(config.PUBLIC_PATH));
 
-app.use('/users', users);
-app.use('/', routes);
+app.use('/', express.static(config.PUBLIC_PATH));
+app.use('/', require('server/routes/dashboard'));
+app.use('/', require('server/routes'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

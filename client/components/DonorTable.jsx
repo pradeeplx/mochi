@@ -40,7 +40,7 @@ export class DonorTable extends React.Component {
 
 DonorTable.propTypes = {
   users: PropTypes.arrayOf(PropTypes.object),
-  fetchAllUsers: PropTypes.function,
+  fetchAllUsers: PropTypes.func,
 };
 
 export default DonorTable;
