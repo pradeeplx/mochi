@@ -10,6 +10,9 @@ const bodyParser = require('body-parser');
 const config = require('config');
 const log = require('server/loggers');
 
+// TODO: use googleauth.client to make API calls
+const googleauth = require('server/mail/googleauth');
+
 const routes = require('server/routes/index');
 const users = require('server/routes/users');
 
