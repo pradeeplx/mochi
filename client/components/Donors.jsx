@@ -11,11 +11,18 @@ export const Donors = ({ users, actions }) =>
       <input type="text" className="form-control" placeholder="Search for..." />
       <span className="input-group-btn">
         <Button className="btn btn-default" type="button">Search</Button>
-        <Button className="btn btn-primary addDonor" type="button" toggle="modal" target="#addDonor-modal">Add Donor</Button>
+        <Button
+          className="btn btn-primary addDonor"
+          type="button"
+          toggle="modal"
+          target="#addDonor-modal"
+        >
+          Add Donor
+        </Button>
       </span>
     </div>
     <DonorTable users={users} fetchAllUsers={actions.fetchAllUsers} />
-    
+
     <Modal id="addDonor-modal" title="Add New Donor">
       {/* TODO: Render different form based on button clicked */}
       <form role="form">

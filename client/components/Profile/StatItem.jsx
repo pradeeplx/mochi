@@ -11,7 +11,7 @@ export const StatItem = ({ size, header, detail }) =>
 StatItem.propTypes = {
   size: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
-  detail: PropTypes.string.isRequired,
+  detail: PropTypes.any.isRequired,
 };
 
 export default StatItem;

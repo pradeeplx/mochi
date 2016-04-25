@@ -8,7 +8,7 @@ module.exports = {
   debug: true,
   context: path.join(__dirname, '/client'),
   entry: {
-    bundle: './index.js',
+    app: './index.js',
   },
   output: {
     path: path.join(__dirname, 'public'),
@@ -41,6 +41,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Mochi',
       favicon: './assets/favicon.ico',
+      chunks: ['app'],
+      inject: false,
       template: './index-template.html',
     }),
     new CleanWebpackPlugin(['public'], {
