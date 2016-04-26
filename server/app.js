@@ -10,9 +10,6 @@ const bodyParser = require('body-parser');
 const config = require('config');
 const log = require('server/loggers');
 
-// TODO: use googleauth.client to make API calls
-const googleauth = require('server/mail/googleauth');
-
 log.info('Starting Mochi server');
 const app = express();
 
@@ -55,7 +52,7 @@ app.use((err, req, res) => {
 });
 
 app.listen(config.LISTEN_PORT, config.LISTEN_HOST, () => {
-  log.info(`listening on ${config.LISTEN_HOST}:${config.LISTEN_HOST}`);
+  log.info(`listening on ${config.LISTEN_HOST}:${config.LISTEN_PORT}`);
 });
 
 module.exports = app;
