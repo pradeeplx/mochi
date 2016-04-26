@@ -7,8 +7,8 @@ const log = require('server/loggers');
 const USERS_PATH = path.join(__dirname, 'users');
 
 /**
- * @param  {string}   username [description]
- * @param  {Function} callback [description]
+ * @param  {string}   username
+ * @param  {Function} callback
  */
 const getUser = (username, callback) => {
   log.info(`Loading username "${username}"`);
@@ -24,6 +24,9 @@ const getUser = (username, callback) => {
   });
 };
 
+/**
+ * @param  {Function} callback
+ */
 const getAllUsers = (callback) => {
   fs.readdir(USERS_PATH, (err, files) => {
     if (err) return callback(err);
