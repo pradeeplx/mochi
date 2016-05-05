@@ -1,7 +1,6 @@
 'use strict';
 
 // https://github.com/emailjs/emailjs-mime-builder
-//
 const MimeBuilder = require('mailbuild');
 const uuid = require('node-uuid');
 const log = require('server/loggers');

@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/', express.static(config.PUBLIC_PATH));
+app.use('/profile', express.static(path.join(__dirname, 'db', 'users', 'images')));
 app.use('/', require('server/routes/dashboard'));
 app.use('/', require('server/routes'));
 
