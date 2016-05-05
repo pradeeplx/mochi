@@ -1,7 +1,7 @@
 import React from 'react';
 import Route from 'react-router/lib/Route';
 import IndexRoute from 'react-router/lib/IndexRoute';
-import { App, Dashboard, Profile, Contacts } from './pages';
+import { App, Dashboard, Profile, Contacts, ComposePage } from './pages';
 
 export default (
   <Route path="/" component={App}>
@@ -9,6 +9,6 @@ export default (
     <Route path="dash" component={Dashboard} />
     <Route path="contacts" component={Contacts} />
     <Route path="donor(/:username)" component={Profile} />
-    <Route path="donor(/:username)/compose" component={Profile} />
+    <Route path="donor(/:username)/compose" component={ComposePage} />
   </Route>
 );
