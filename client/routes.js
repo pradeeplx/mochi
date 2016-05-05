@@ -9,5 +9,6 @@ export default (
     <Route path="dash" component={Dashboard} />
     <Route path="contacts" component={Contacts} />
     <Route path="donor(/:username)" component={Profile} />
+    <Route path="donor(/:username)/compose" component={Profile} />
   </Route>
 );
