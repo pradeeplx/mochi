@@ -302,6 +302,11 @@ h3 span {
   border-radius: 0;
 }
 
+.modal-body {
+  overflow: scroll;
+  margin-bottom: 17px;
+}
+
 .input-group {
   margin-bottom: 30px;
 }
@@ -380,8 +385,8 @@ h3 span {
 }
 
 .mochify-row {
-  display: flex;
   margin: 1rem 0rem;
+  padding: 17px;
 }
 
 /* Mochify button */
@@ -391,6 +396,20 @@ h3 span {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mochify-details h3 {
+  font-weight: bold;
+  margin-top: 0;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Titillium Web';
+}
+
+.mochify-details span {
+  display: block;
 }
 
 .contact-links {

@@ -29,20 +29,33 @@ const MochifyResults = ({ show, router, reMochify, handleButton }) => {
     content = (
       <div>
         <h2>Please select the correct Greg</h2>
-        <div className="mochify-row">
-          <div
-            className="mochify-image"
-            style={avatarImageStyle('http://tech.cornell.edu/uploads/bios/_landscape/Pass_Greg_2015_2.jpg')}
-          />
-          <p>Greg Pass, M, 40, former CTO of Twitter</p>
-          <button onClick={(e) => handleSubmit(e, router)}>Select</button>
+        <div className="mochify-row row">
+          <div className="col-md-4">
+            <a onClick={(e) => handleSubmit(e, router)}>
+              <div
+                className="mochify-image"
+                style={avatarImageStyle('http://tech.cornell.edu/uploads/bios/_landscape/Pass_Greg_2015_2.jpg')}
+              />
+            </a>
+          </div>
+          <div className="col-md-8 mochify-details">
+            <h3>Greg Pass</h3>
+            <span>Cornell Tech</span>
+            <span>New York, NY</span>
+          </div>
         </div>
         <div className="mochify-row">
-          <div
-            className="mochify-image"
-            style={avatarImageStyle('http://www.opengardensblog.futuretext.com/wp-content/uploads/misc/sith.JPG')}
-          />
-          <p>Greg Pass, M, 93, Sith Lord</p>
+          <div className="col-md-4">
+            <div
+              className="mochify-image"
+              style={avatarImageStyle('http://www.opengardensblog.futuretext.com/wp-content/uploads/misc/sith.JPG')}
+            />
+          </div>
+          <div className="col-md-8 mochify-details">
+            <h3>Greg Pass</h3>
+            <span>Sith Lord</span>
+            <span>Death Star</span>
+          </div>
         </div>
       </div>
     );
