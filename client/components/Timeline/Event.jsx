@@ -33,7 +33,7 @@ export const Event = ({ title, category, date, amount, children }) =>
       <h4>{getTitle(title, category, amount)}</h4>
     </div>
     <div className="event-details">
-      <h5>{date}</h5>
+      <h5>{(new Date(date)).toDateString()}</h5>
       <p>{children}</p>
     </div>
   </div>;
