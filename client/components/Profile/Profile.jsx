@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
+import Button from '../Button/Button';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
 import ImgAnimation from '../../assets/ANIMATION.gif';
@@ -61,6 +62,8 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
+          <button className="btn btn-default profile-btn">Compose</button>
+          <button className="btn btn-default profile-btn">Mochify</button>
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
         {gpassBoring}
