@@ -7,6 +7,7 @@ import Sean1 from '../assets/sean1.jpg';
 import Sean2 from '../assets/sean2.jpg';
 import Sean3 from '../assets/sean3.jpg';
 import Sean4 from '../assets/sean4.jpg';
+import Mochi from '../assets/emaillogo.png';
 
 // import Timeline from '../components/Timeline';
 
@@ -19,10 +20,10 @@ export const ComposePage = () =>
         <div className="col-md-7 col-md-offset-1 main compose-box">
           <div className="compose-box-wrapper">
             <div className="letter-box">
-              <h1>MOCHI</h1>
+              <img className="email-logo" src={`/${Mochi}`} />
               <p>Hi Sean!</p>
-              <p>It’s been over a year since you last donated to Mochi! So much has gone on since then. New programs, new projects, and new staff! Just last week, Taylor Swift visited our offices to let us know that she loves what Mochi is doing.</p>
-              <p>We thought you might enjoy these photos from your visit to Mochi HQ , and from Queen Tay’s visit!</p>
+              <p>It’s been <span className="mochi-pink">over a year since you last donated</span> to Mochi! So much has gone on since then. New programs, new projects, and new staff! Just last week, Taylor Swift visited our offices to let us know that she loves what Mochi is doing.</p>
+              <p>We thought you might enjoy these photos from <span className="mochi-blue">your visit to Mochi HQ</span> , and from Queen Tay’s visit!</p>
               <p>As always, our organization depends on long term members like you! We are seeking donors for our 2016 annual membership drive, and we need your help!</p>
               <img className="" src={`/${Sean1}`} />
               <img className="" src={`/${Sean4}`} />
