@@ -1,0 +1,16 @@
+{
+	"username": "yolo",
+	"first": "YO",
+	"last": "LO",
+	"email": null,
+	"twitter": null,
+	"phoneNumber": null,
+	"city": null,
+	"state": null,
+	"photo": null,
+	"events": [
+		{
+			"title": "test1"
+		}
+	]
+}
