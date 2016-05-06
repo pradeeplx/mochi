@@ -6,6 +6,11 @@
 body {
   padding-top: 50px;
   background: #e5e5e5;
+  height:100%;
+}
+
+html {
+  height:100%
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -20,6 +25,10 @@ a, span{
 h3 span {
   font-family: 'Titillium Web', sans-serif;
   color: #333333;
+}
+
+.center {
+  text-align: center;
 }
 
 /*
@@ -123,7 +132,7 @@ h3 span {
   }
 }
 @media (min-width: 992px){
-  .profile, .donors {
+  .profile, .donors, .compose-box {
     position: absolute;
     top: 50px;
     bottom: 0;
@@ -150,7 +159,7 @@ h3 span {
 
 /* PROFILE */
 
-.profile, .donors {
+.profile, .donors, .compose-box {
   border: 8px solid #e5e5e5;
   border-bottom: none;
 }
@@ -303,17 +312,33 @@ h3 span {
 
 /* COMPOSE */
 
+.compose-box {
+  background: #c0c0c0;
+}
+
+.letter-box {
+  background: #ffffff;
+  padding: 7px 17px;
+  margin: 0 70px;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
 .media-box {
   width: 100%;
-  position: absolute;
+/*  position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;*/
 }
 
 .media-box-container {
   background: #e5e5e5;
   padding: 27px 7px;
+}
+
+.compose-box-wrapper {
+  margin-bottom: 184px;
 }
 
 .media-box-item {
@@ -332,6 +357,12 @@ h3 span {
   top: 35%;
   color: white;
   opacity: 0.80;
+}
+
+.media-box-float {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
 }
 
 #scroll-left {
@@ -399,7 +430,6 @@ img.mochify-bounce {
 
 }
 
-
 .donor-profile-img {
   width: 50px;
   height: 50px;
@@ -408,4 +438,30 @@ img.mochify-bounce {
 
 #mochify-bounce-modal h2 {
   text-align: center;
+}
+
+.letter-box img {
+  max-height: 185px;
+  margin-right: 7px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.btn-donate {
+  background: rgb(5, 123, 223);
+  color: #ffffff;
+  padding: 7px 17px;
+  margin: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-send {
+  background: #f61b7d;
+  color: #ffffff;
+  padding: 7px 17px;
+  margin: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 250px;
 }
