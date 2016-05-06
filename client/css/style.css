@@ -337,6 +337,10 @@ a, span{
   right: 30px;
 }
 
+.profile-btn {
+  float: right;
+  margin-top: 50px;
+}
 
 
 
