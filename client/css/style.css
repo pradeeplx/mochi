@@ -398,6 +398,7 @@ h3 span {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .mochify-details h3 {
@@ -449,11 +450,11 @@ img.mochify-bounce {
 
 }
 
-.table>tbody>tr>td, 
-.table>tbody>tr>th, 
-.table>tfoot>tr>td, 
-.table>tfoot>tr>th, 
-.table>thead>tr>td, 
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
 .table>thead>tr>th {
   vertical-align: middle;
 }
