@@ -3,13 +3,22 @@ import Link from 'react-router/lib/Link';
 
 // <Link to={`/donor/${username}`}></Link>
 
-export const DonorRow = ({ first, last, email, city, username }) =>
-    <tr>
-      <td><Link to={`/donor/${username}`}>{first}</Link></td>
-      <td><Link to={`/donor/${username}`}>{last}</Link></td>
-      <td><Link to={`/donor/${username}`}>{email}</Link></td>
-      <td>{city}</td>
-    </tr>;
+export const DonorRow = ({ first, last, email, city, username, photo }) => {
+  const avatarImageStyle = `url(${photo}) #b7b7b7 no-repeat 50% / cover`;
+  return (
+  <tr>
+    <td>
+      <div
+        className="donor-profile-img"
+        style={{ background: avatarImageStyle }}
+      />
+    </td>
+    <td><Link to={`/donor/${username}`}>{first}</Link></td>
+    <td><Link to={`/donor/${username}`}>{last}</Link></td>
+    <td><Link to={`/donor/${username}`}>{email}</Link></td>
+    <td>{city}</td>
+  </tr>);
+  };
 
 DonorRow.propTypes = {
   first: PropTypes.string,
@@ -17,6 +26,7 @@ DonorRow.propTypes = {
   email: PropTypes.string,
   city: PropTypes.string,
   username: PropTypes.string,
+  photo: PropTypes.string,
 };
 
 export default DonorRow;

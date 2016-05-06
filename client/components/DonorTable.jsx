@@ -20,6 +20,7 @@ export class DonorTable extends React.Component {
         email={user.profile.email}
         city={user.profile.city}
         username={user.profile.username}
+        photo={user.profile.photo}
       />
     );
 
@@ -27,6 +28,7 @@ export class DonorTable extends React.Component {
       <table className="table table-hover">
          <thead>
             <tr>
+              <th></th>
               <th>First</th>
               <th>Last</th>
               <th>Email</th>
