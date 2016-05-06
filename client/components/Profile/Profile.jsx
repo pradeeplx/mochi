@@ -1,27 +1,19 @@
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
-<<<<<<< HEAD
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
-import ImgAnimation from '../../assets/ANIMATION.gif';
-import ImgBox1B from '../../assets/box1b.png';
-import ImgBox2B from '../../assets/box2b.png';
+
 import KeepInTouch from './KeepInTouch';
 
-const GPASS_DELAY = 6500;
-=======
 import MochifyControls from './MochifyControls';
 // import Button from '../Button/Button';
-import SummaryStats from './SummaryStats';
-import ContactInfo from './ContactInfo';
 // import ImgAnimation from '../../assets/ANIMATION.gif';
 // import ImgBox1B from '../../assets/box1b.png';
 // import ImgBox2B from '../../assets/box2b.png';
 import Link from 'react-router/lib/Link';
 
 // const GPASS_DELAY = 6500;
->>>>>>> f04dd39fb857a465fa1e2988b610a3c5ebab09e8
 
 export class Profile extends React.Component {
 
@@ -97,7 +89,6 @@ export class Profile extends React.Component {
           first={profile.first}
           username={username}
         />
-        {gpassFancy}
       </div>
     );
   }
