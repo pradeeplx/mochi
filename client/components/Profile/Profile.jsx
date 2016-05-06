@@ -3,16 +3,9 @@ import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
-
 import KeepInTouch from './KeepInTouch';
-
-import MochifyControls from './MochifyControls';
-// import Button from '../Button/Button';
-// import ImgAnimation from '../../assets/ANIMATION.gif';
-// import ImgBox1B from '../../assets/box1b.png';
-// import ImgBox2B from '../../assets/box2b.png';
-
-// const GPASS_DELAY = 6500;
+import MochifyControls from '../Mochify/MochifyControls';
+import ProfileExtras from './ProfileExtras';
 
 export class Profile extends React.Component {
 
@@ -20,11 +13,15 @@ export class Profile extends React.Component {
     const { fetchUser } = this.props.actions;
     const { username = 'unknown' } = this.props;
     fetchUser(username);
-    // if (username === 'gpass1') {
-    //   window.setTimeout(() => {
-    //     fetchUser('gpass2');
-    //   }, GPASS_DELAY);
-    // }
+  }
+
+  componentWillReceiveProps({ username: newUsername }) {
+    const { username } = this.props;
+    const { fetchUser } = this.props.actions;
+
+    if (username !== newUsername) {
+      fetchUser(newUsername);
+    }
   }
 
   render() {
@@ -35,30 +32,12 @@ export class Profile extends React.Component {
       lastDonation,
       totalDonations,
       username,
+      router,
     } = this.props;
 
+    console.debug(`Render Profile for username=${username}`);
+
     const { submitUserEvent } = this.props.actions;
-
-    // let gpassFancy = <span></span>;
-    // if (username === 'gpass1' && profile.photo) {
-    //   gpassFancy = (
-    //     <div className="row">
-    //       <div className="col-md-6">
-    //         <img className="img-responsive" src={`/${ImgBox1B}`} />
-    //       </div>
-    //       <div className="col-md-6">
-    //         <img className="img-responsive" src={`/${ImgBox2B}`} />
-    //       </div>
-    //     </div>
-    //   );
-    // }
-
-    // let gpassBoring = <span></span>;
-    // if (username === 'gpass1' && !profile.photo) {
-    //   gpassBoring = (
-    //     <div><img src={`/${ImgAnimation}`} /></div>
-    //   );
-    // }
 
     return (
       <div className="col-md-7 col-md-offset-1 main profile">
@@ -66,7 +45,10 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
-          <MochifyControls />
+          <MochifyControls
+            reMochify={!!profile.twitter}
+            router={router}
+          />
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
         <SummaryStats
@@ -82,6 +64,7 @@ export class Profile extends React.Component {
           city={profile.city}
           state={profile.state}
         />
+        <ProfileExtras images={profile.details || []} />
         <KeepInTouch
           first={profile.first}
           username={username}
@@ -99,6 +82,8 @@ Profile.propTypes = {
   totalDonations: PropTypes.number,
   username: PropTypes.string,
   actions: PropTypes.object,
+  router: PropTypes.object.isRequired,
+  // location: PropTypes.object.isRequired,
 };
 
 export default Profile;

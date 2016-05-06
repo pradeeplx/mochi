@@ -372,10 +372,15 @@ h3 span {
   margin-top: 10px;
 }
 
+.profile-extras {
+  display: flex;
+}
 
+.profile-extras img {
+  max-height: 300px;
+  margin: 1rem;
+}
 
-
-
-
-
-
+img.mochify-bounce {
+  margin: auto;
+}

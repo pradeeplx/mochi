@@ -8,14 +8,18 @@
         "phoneNumber": "912-902-3122",
         "city":"New York",
         "state": "NY",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/0c0/142/02414b7.jpg"
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/0c0/142/02414b7.jpg",
+        "details": [
+            "/details/gpass-giving.png",
+            "/details/gpass-social.png"
+        ]
     },
     "events": [
     	{
             "title": "New Donor: Greg Pass",
     		"date": "04/08/2016",
     		"category": "event",
-    		"description": "Greg Pass was added to the database",
+    		"description": "",
     		"amount": null
     	}
     ]
