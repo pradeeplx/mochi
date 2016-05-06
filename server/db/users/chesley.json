@@ -14,7 +14,14 @@
 		{
 			"title": "Custom Fundraising Appeal Sent",
 			"category": "correspondence",
-			"date": "2016-05-06T20:02:42.562Z",
+			"date": "2016-05-06T20:04:39.119Z",
+			"description": "",
+			"amount": null
+		},
+		{
+			"title": "Custom Fundraising Appeal Sent",
+			"category": "correspondence",
+			"date": "2016-05-06T20:04:39.119Z",
 			"description": "",
 			"amount": null
 		},
@@ -28,15 +35,15 @@
 		{
 			"title": "Custom Fundraising Appeal Sent",
 			"category": "correspondence",
-			"date": "2016-05-06T20:04:39.119Z",
+			"date": "2016-05-06T20:02:42.562Z",
 			"description": "",
 			"amount": null
 		},
 		{
-			"title": "Custom Fundraising Appeal Sent",
+			"title": "May 2016 Fundraising Appeal Sent",
 			"category": "correspondence",
-			"date": "2016-05-06T20:04:39.119Z",
-			"description": "",
+			"date": "2016-05-06T20:42:44.202Z",
+			"description": "May 2016 summer appeal for donations from repeat donors and past members",
 			"amount": null
 		}
 	]
