@@ -1,1 +1,1 @@
-export { getUser, getAllUsers } from './api';
+export { getUser, getAllUsers, addUserEvent } from './api';
