@@ -105,7 +105,7 @@ export class MochifyControls extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="event-controls">
         <MochifyResults
           {...this.props}
           show={this.state.show}
