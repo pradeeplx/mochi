@@ -1,14 +1,16 @@
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
-import MochifyControls from './MochifyControls';
-// import Button from '../Button/Button';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
+
+import KeepInTouch from './KeepInTouch';
+
+import MochifyControls from './MochifyControls';
+// import Button from '../Button/Button';
 // import ImgAnimation from '../../assets/ANIMATION.gif';
 // import ImgBox1B from '../../assets/box1b.png';
 // import ImgBox2B from '../../assets/box2b.png';
-import Link from 'react-router/lib/Link';
 
 // const GPASS_DELAY = 6500;
 
@@ -64,7 +66,6 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
-          <Link to={`/donor/${username}/compose`} className="btn btn-default profile-btn">Compose</Link>
           <MochifyControls />
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
@@ -80,6 +81,10 @@ export class Profile extends React.Component {
           twitter={profile.twitter}
           city={profile.city}
           state={profile.state}
+        />
+        <KeepInTouch
+          first={profile.first}
+          username={username}
         />
       </div>
     );
