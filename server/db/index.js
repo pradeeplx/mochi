@@ -41,7 +41,19 @@ const getAllUsers = (callback) => {
       // .each(filename => console.log('Loading filename', filename))
       // TODO: this is bad!
       .filter(filename => fs.statSync(filename).isFile())
-      .map(filename => require(filename)));
+      .map(filename => require(filename))
+      .sort((a, b) => {
+        const nameA = a.profile.last.toUpperCase();
+        const nameB = b.profile.last.toUpperCase();
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+        // names must be equal
+        return 0;
+      }));
     return callback(null, users);
   });
 };

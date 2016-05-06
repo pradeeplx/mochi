@@ -5,7 +5,7 @@ import ModalHeader from '../components/ModalHeader';
 import ModalBody from '../components/ModalBody';
 
 export const Modal = ({
-  id, title = '', show = true, backdrop = false, children
+  id, title = '', show = true, backdrop = false, children,
 }) => (
   <div
     id={id}
