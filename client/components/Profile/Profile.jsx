@@ -7,6 +7,8 @@ import ContactInfo from './ContactInfo';
 import ImgAnimation from '../../assets/ANIMATION.gif';
 import ImgBox1B from '../../assets/box1b.png';
 import ImgBox2B from '../../assets/box2b.png';
+import Link from 'react-router/lib/Link';
+
 
 const GPASS_DELAY = 6500;
 
@@ -62,7 +64,7 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
-          <button className="btn btn-default profile-btn">Compose</button>
+          <Link to={`/donor/${username}/compose`} className="btn btn-default profile-btn">Compose</Link>
           <button className="btn btn-default profile-btn">Mochify</button>
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
