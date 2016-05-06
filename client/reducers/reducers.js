@@ -32,7 +32,6 @@ export const userEvents = (state = defaultUserEvents, action) => {
 export const usersList = (state = [], action) => {
   switch (action.type) {
     case actions.RECEIVE_ALL_USERS: {
-      console.debug(action.users);
       if (action.users) {
         return action.users.filter(user =>
           user.profile.username !== 'gpasscornell');
