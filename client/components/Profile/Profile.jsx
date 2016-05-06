@@ -67,8 +67,6 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
-          <button className="btn btn-default profile-btn">Mochify</button>
-          <Link to={`/donor/${username}/compose`} className="btn btn-default profile-btn">Compose</Link>
           <MochifyControls />
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
