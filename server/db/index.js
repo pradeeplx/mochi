@@ -36,7 +36,6 @@ const getAllUsers = (callback) => {
     if (err) return callback(err);
     const users = (
       files
-      // .filter(file => )
       .map(file => path.join(USERS_PATH, file))
       // TODO: this is bad!
       .filter(filename => fs.statSync(filename).isFile())
