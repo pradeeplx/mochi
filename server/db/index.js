@@ -46,15 +46,17 @@ const getAllUsers = (callback) => {
 };
 
 const UserDefaults = {
-  username: null,
-  email: null,
-  first: null,
-  last: null,
-  twitter: null,
-  phoneNumber: null,
-  city: null,
-  state: null,
-  photo: null,
+  profile: {
+    username: null,
+    email: null,
+    first: null,
+    last: null,
+    twitter: null,
+    phoneNumber: null,
+    city: null,
+    state: null,
+    photo: null,
+  },
   events: [],
 };
 
@@ -64,7 +66,7 @@ const UserDefaults = {
  */
 const saveUser = (user, callback) => {
   const preppedUser = _.defaultsDeep(user, UserDefaults);
-  const username = preppedUser.username;
+  const username = preppedUser.profile.username;
   log.info('Saving user', preppedUser);
   if (!username) {
     return callback(new Error('Missing required parameter username'));
@@ -86,6 +88,7 @@ const saveUser = (user, callback) => {
  */
 const addUserEvent = (options, callback) =>
   getUser(options.username, (err, user) => {
+    log.info(`Saving new event for '${options.username}'`, options.event);
     if (err) return callback(err);
     if (options.event) {
       user.events.push(options.event);

@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { fetchUser } from '../actions/actioncreators';
+import { fetchUser, submitUserEvent } from '../actions/actioncreators';
 import Profile from '../components/Profile';
 import {
   getDonorOriginYear,
@@ -17,7 +17,12 @@ export const ProfileContainer = connect(
     lastDonation: getDonorLastDonation(state),
     totalDonations: getDonorDonationTotal(state),
   }),
-  dispatch => ({ actions: bindActionCreators({ fetchUser }, dispatch) })
+  dispatch => ({
+    actions: bindActionCreators({
+      fetchUser,
+      submitUserEvent,
+    }, dispatch),
+  })
 )(Profile);
 
 export default ProfileContainer;
