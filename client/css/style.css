@@ -296,6 +296,51 @@ a, span{
   margin-left: 50px;
 }
 
+/* COMPOSE */
+
+.media-box {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.media-box-container {
+  background: #e5e5e5;
+  padding: 27px 7px;
+}
+
+.media-box-item {
+  text-align: center;
+}
+
+.media-box img {
+  max-height: 130px;
+  border-radius: 5px;
+}
+
+.media-box-container > .glyphicon {
+  position: absolute;
+  font-size: 50px;
+  z-index: 9999;
+  top: 35%;
+  color: white;
+  opacity: 0.80;
+}
+
+#scroll-left {
+  left: 20px;
+}
+
+#scroll-right {
+  right: 30px;
+}
+
+
+
+
+
 
 
 
