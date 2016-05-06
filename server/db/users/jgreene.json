@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "username": "jgreene",
+        "email": "jayson@pitchfork.com",
+        "first": "Jayson",
+        "last": "Greene",
+        "twitter": "jaysongreene",
+        "phoneNumber": "212-235-7785",
+        "city": "Brooklyn",
+        "state": "NY",
+        "photo": "/profile/jgreene.jpg"
+    },
+    "events": []
+}

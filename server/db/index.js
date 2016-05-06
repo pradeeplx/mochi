@@ -32,11 +32,13 @@ const getUser = (username, callback) => {
  */
 const getAllUsers = (callback) => {
   fs.readdir(USERS_PATH, (err, files) => {
-    log.info(`Loading users from ${USERS_PATH}`);
+    log.info(`Loading users from ${USERS_PATH}`, files);
     if (err) return callback(err);
     const users = (
       files
+      .filter(file => file !== '.DS_Store')
       .map(file => path.join(USERS_PATH, file))
+      // .each(filename => console.log('Loading filename', filename))
       // TODO: this is bad!
       .filter(filename => fs.statSync(filename).isFile())
       .map(filename => require(filename)));

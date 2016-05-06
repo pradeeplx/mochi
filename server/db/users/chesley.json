@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "username": "chesley",
+        "email": "chesleyandrews@etsy.com",
+        "first": "Chesley",
+        "last": "Andrews",
+        "twitter": "itschesley",
+        "phoneNumber": "518-892-1251",
+        "city": "Brooklyn",
+        "state": "NY",
+        "photo": "/profile/chesley.jpg"
+    },
+    "events": []
+}

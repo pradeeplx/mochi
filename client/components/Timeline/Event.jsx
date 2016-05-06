@@ -19,7 +19,7 @@ const getColor = (category) => {
 
 const getTitle = (title, category, amount) => {
   if (category === DONATION_CATEGORY) {
-    return `${title} $${amount}`;
+    return `${title} $${Number(amount).toLocaleString()}`;
   }
   return title;
 };

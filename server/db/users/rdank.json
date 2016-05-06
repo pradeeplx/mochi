@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "username": "rdank",
+        "email": "roy@thewurstedits.com",
+        "first": "Roy",
+        "last": "Dank",
+        "twitter": "dankedits",
+        "phoneNumber": "704-280-8862",
+        "city": "Brooklyn",
+        "state": "NY",
+        "photo": "/profile/rdank.jpg"
+    },
+    "events": []
+}
