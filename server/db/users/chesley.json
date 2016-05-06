@@ -1,14 +1,43 @@
 {
-    "profile": {
-        "username": "chesley",
-        "email": "chesleyandrews@etsy.com",
-        "first": "Chesley",
-        "last": "Andrews",
-        "twitter": "itschesley",
-        "phoneNumber": "518-892-1251",
-        "city": "Brooklyn",
-        "state": "NY",
-        "photo": "/profile/chesley.jpg"
-    },
-    "events": []
+	"profile": {
+		"username": "chesley",
+		"email": "chesleyandrews@etsy.com",
+		"first": "Chesley",
+		"last": "Andrews",
+		"twitter": "itschesley",
+		"phoneNumber": "518-892-1251",
+		"city": "Brooklyn",
+		"state": "NY",
+		"photo": "/profile/chesley.jpg"
+	},
+	"events": [
+		{
+			"title": "Custom Fundraising Appeal Sent",
+			"category": "correspondence",
+			"date": "2016-05-06T20:02:42.562Z",
+			"description": "",
+			"amount": null
+		},
+		{
+			"title": "Custom Fundraising Appeal Sent",
+			"category": "correspondence",
+			"date": "2016-05-06T20:04:23.833Z",
+			"description": "",
+			"amount": null
+		},
+		{
+			"title": "Custom Fundraising Appeal Sent",
+			"category": "correspondence",
+			"date": "2016-05-06T20:04:39.119Z",
+			"description": "",
+			"amount": null
+		},
+		{
+			"title": "Custom Fundraising Appeal Sent",
+			"category": "correspondence",
+			"date": "2016-05-06T20:04:39.119Z",
+			"description": "",
+			"amount": null
+		}
+	]
 }

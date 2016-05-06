@@ -1,73 +1,75 @@
 {
-    "profile": {
-        "username": "sherman",
-        "email": "seanherman@gmail.com",
-        "first": "Sean",
-        "last": "Herman",
-        "twitter": "seannnnnnnnnnnn",
-        "phoneNumber": "516-378-9023",
-        "city": "New York",
-        "state": "NY",
-        "photo": "/profile/sherman.jpg"
-    },
-    "events": [
-    	{
-            "title": "Donated",
-            "date": "04/13/2015",
-            "category": "donation",
-            "description": "A very generous donation in honor of his dog's birthday.",
-            "amount": 120.00
-        },
-
-        {
-            "title": "Visited Mochi HQ",
-            "date": "01/10/2014",
-            "category": "event",
-            "description": "Sean came to meet us in our headquarters. We took him around for a tour and he was impressed with our operation!",
-            "amount": 0.00
-        },
-        {
-            "title": "Donated",
-            "date": "08/3/2012",
-            "category": "donation",
-            "description": "Sean provides funding to help purchase new music for the various musical groups at Beth Am.",
-            "amount": 2300.00
-        },
-        {
-            "title": "Annual Appeal Sent",
-            "date": "05/24/2005",
-            "category": "correspondence",
-            "description": "Emailed our annual appeal requesting funds for our new-age art initiative.",
-            "amount": 0.00
-        },
-        {
-            "title": "Lunch with Board Members",
-            "date": "01/30/2002",
-            "category": "meeting",
-            "description": "Sean joined our board members for lunch at John's diner to discuss how he can get more involved in the organization.",
-            "amount": 120.00
-        },
-        {
-            "title": "Donated",
-            "date": "09/18/2001",
-            "category": "donation",
-            "description": "Sean provided funding to help purchase new music for the various musical groups at Beth Am.",
-            "amount": 1660.00
-        },
-        {
-            "title": "Donated",
-            "date": "08/8/1999",
-            "category": "donation",
-            "description": "Sean provided funding to help purchase new art supplies for starving artists.",
-            "amount": 10.00
-        },
-        {
-            "title": "Donated",
-            "date": "04/13/1995",
-            "category": "donation",
-            "description": "Sean provided funding to help provide shelter for homeless people.",
-            "amount": 12.00
-        }
-    ]
-
+	"profile": {
+		"username": "sherman",
+		"email": "seanherman@gmail.com",
+		"first": "Sean",
+		"last": "Herman",
+		"twitter": "seannnnnnnnnnnn",
+		"phoneNumber": "516-378-9023",
+		"city": "New York",
+		"state": "NY",
+		"photo": "/profile/sherman.jpg",
+		"details": [
+			"/details/sean-giving.png",
+			"/details/sean-social.png"
+		]
+	},
+	"events": [
+		{
+			"title": "Donated",
+			"date": "04/13/2015",
+			"category": "donation",
+			"description": "A very generous donation in honor of his dog's birthday.",
+			"amount": 120
+		},
+		{
+			"title": "Visited Mochi HQ",
+			"date": "01/10/2014",
+			"category": "event",
+			"description": "Sean came to meet us in our headquarters. We took him around for a tour and he was impressed with our operation!",
+			"amount": 0
+		},
+		{
+			"title": "Donated",
+			"date": "08/3/2012",
+			"category": "donation",
+			"description": "Sean provides funding to help purchase new music for the various musical groups at Beth Am.",
+			"amount": 2300
+		},
+		{
+			"title": "Annual Appeal Sent",
+			"date": "05/24/2005",
+			"category": "correspondence",
+			"description": "Emailed our annual appeal requesting funds for our new-age art initiative.",
+			"amount": 0
+		},
+		{
+			"title": "Lunch with Board Members",
+			"date": "01/30/2002",
+			"category": "meeting",
+			"description": "Sean joined our board members for lunch at John's diner to discuss how he can get more involved in the organization.",
+			"amount": 120
+		},
+		{
+			"title": "Donated",
+			"date": "09/18/2001",
+			"category": "donation",
+			"description": "Sean provided funding to help purchase new music for the various musical groups at Beth Am.",
+			"amount": 1660
+		},
+		{
+			"title": "Donated",
+			"date": "08/8/1999",
+			"category": "donation",
+			"description": "Sean provided funding to help purchase new art supplies for starving artists.",
+			"amount": 10
+		},
+		{
+			"title": "Donated",
+			"date": "04/13/1995",
+			"category": "donation",
+			"description": "Sean provided funding to help provide shelter for homeless people.",
+			"amount": 12
+		}
+	]
 }

@@ -5,5 +5,13 @@
         "last": "Pass",
         "username": "gpasscornell"
     },
-    "events": []
+    "events": [
+      {
+        "title": "New Donor: Greg Pass",
+        "date": "05/06/2016",
+        "category": "event",
+        "description": "",
+        "amount": null
+      }
+    ]
 }
