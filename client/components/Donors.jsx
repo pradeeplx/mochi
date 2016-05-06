@@ -6,7 +6,7 @@ import Link from 'react-router/lib/Link';
 
 export const Donors = ({ users, actions }) =>
   // TODO make these controls a component
-  <div className="col-md-11 col-md-offset-1 main donors">
+  <div className="col-md-7 col-md-offset-1 main donors">
     <div className="input-group">
       <input type="text" className="form-control" placeholder="Search for..." />
       <span className="input-group-btn">

@@ -24,20 +24,6 @@
 			"category": "meeting",
 			"description": "Gideon attended CNN Hero award event.",
 			"amount": 490
-		},
-		{
-			"title": "xyz",
-			"date": "2016-12-31T00:00:00.000Z",
-			"type": "donation",
-			"description": "",
-			"amount": "55"
-		},
-		{
-			"title": "sdg",
-			"date": "2016-12-31T00:00:00.000Z",
-			"type": "donation",
-			"description": "",
-			"amount": "113"
 		}
 	]
 }
