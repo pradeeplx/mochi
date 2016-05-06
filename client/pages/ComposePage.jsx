@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
-import { Timeline } from '../containers'
+import Button from '../components/Button/Button';
+import { Timeline } from '../containers';
 import Sean1 from '../assets/sean1.jpg';
 import Sean2 from '../assets/sean2.jpg';
 import Sean3 from '../assets/sean3.jpg';
@@ -15,10 +16,27 @@ export const ComposePage = () =>
     <SideBar />
     <section id="main-container" className="container-fluid">
       <div className="row">
-        <div className="col-md-7 col-md-offset-1 main profile">
-          <h1>Compose</h1>
-          <h2>Letter here...</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat, nisl ut iaculis condimentum, massa ipsum ultrices tortor, id tempor eros urna nec nisi. </p>
+        <div className="col-md-7 col-md-offset-1 main compose-box">
+          <div className="compose-box-wrapper">
+            <div className="letter-box">
+              <h1>MOCHI</h1>
+              <p>Hi Sean!</p>
+              <p>It’s been over a year since you last donated to Mochi! So much has gone on since then. New programs, new projects, and new staff! Just last week, Taylor Swift visited our offices to let us know that she loves what Mochi is doing.</p>
+              <p>We thought you might enjoy these photos from your visit to Mochi HQ , and from Queen Tay’s visit!</p>
+              <p>As always, our organization depends on long term members like you! We are seeking donors for our 2016 annual membership drive, and we need your help!</p>
+              <img className="" src={`/${Sean1}`} />
+              <img className="" src={`/${Sean4}`} />
+              <p>Click the donate button at the bottom of this email to instantly send at tax-deductible donation to Mochi!</p>
+              <div className="center">
+                <button className="btn btn-donate">Donate</button>
+              </div>
+            </div>
+            <div className="center">
+              <Button type="button" className="btn btn-send" toggle="" target="">Send</Button>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-7 col-md-offset-1 media-box-float">
           <div className="media-box">
             <div className="col-md-12 media-box-container">
               <span id="scroll-left" className="glyphicon glyphicon-chevron-left"></span>
