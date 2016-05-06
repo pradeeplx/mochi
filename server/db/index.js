@@ -9,6 +9,19 @@ const USERS_PATH = path.join(__dirname, 'users');
 
 const userFilename = (username) => path.join(USERS_PATH, `${username}.json`);
 
+const sortEvents = (events) =>
+  events.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    if (dateA > dateB) {
+      return -1;
+    }
+    if (dateA < dateB) {
+      return 1;
+    }
+    return 0;
+  });
+
 /**
  * @param  {string}   username
  * @param  {Function} callback
@@ -23,6 +36,8 @@ const getUser = (username, callback) => {
       log.info('Username does not exist');
       return callback(null, {});
     }
+    const user = require(filePath);
+    user.events = sortEvents(user.events);
     return callback(null, require(filePath));
   });
 };

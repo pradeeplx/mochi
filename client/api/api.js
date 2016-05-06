@@ -15,4 +15,7 @@ export const addUserEvent = (username, event) =>
     headers: {
       'Content-Type': 'application/json',
     },
-  }).then((res) => res.json(), (err) => { throw err; });
+  }).then((res) => {
+    console.debug('Finished adding user event', res);
+    return res.json();
+  }, (err) => { throw err; });
