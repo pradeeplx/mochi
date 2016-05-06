@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import Avatar from './Avatar';
 import AddEventControls from './AddEventControls';
+import MochifyControls from './MochifyControls';
 // import Button from '../Button/Button';
 import SummaryStats from './SummaryStats';
 import ContactInfo from './ContactInfo';
@@ -64,7 +65,7 @@ export class Profile extends React.Component {
             {`${profile.first} ${profile.last}`}
           </Avatar>
           <Link to={`/donor/${username}/compose`} className="btn btn-default profile-btn">Compose</Link>
-          <button className="btn btn-default profile-btn">Mochify</button>
+          <MochifyControls />
           <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
         <SummaryStats
