@@ -25,7 +25,7 @@ export class DonorTable extends React.Component {
     );
 
     return (
-      <table className="table table-hover">
+      <table className="table table-hover donor-table">
          <thead>
             <tr>
               <th></th>
