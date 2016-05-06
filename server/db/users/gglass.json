@@ -1,29 +1,43 @@
 {
-    "profile": {
-        "username": "gglass",
-        "email": "gig6@cornell.edu",
-        "first": "Gideon",
-        "last": "Glass",
-        "twitter": "gidglass",
-        "phoneNumber": "912-902-3122",
-        "city":"New York",
-        "state": "NY",
-        "photo": "/profile/gglass.jpg"
-    },
-    "events": [
-    	{
-            "title": "Donated",
-    		"date": "03/19/2016",
-    		"category": "donation",
-    		"description": "Mr. Glass kindly put $30.00 for cancer research.",
-    		"amount": 30.00
-    	},
-    	{
-            "title": "Attended Award Event",
-    		"date": "11/13/2015",
-    		"category": "meeting",
-    		"description": "Gideon attended CNN Hero award event.",
-    		"amount": 490.00
-    	}
-    ]
+	"profile": {
+		"username": "gglass",
+		"email": "gig6@cornell.edu",
+		"first": "Gideon",
+		"last": "Glass",
+		"twitter": "gidglass",
+		"phoneNumber": "912-902-3122",
+		"city": "New York",
+		"state": "NY",
+		"photo": "/profile/gglass.jpg"
+	},
+	"events": [
+		{
+			"title": "Donated",
+			"date": "03/19/2016",
+			"category": "donation",
+			"description": "Mr. Glass kindly put $30.00 for cancer research.",
+			"amount": 30
+		},
+		{
+			"title": "Attended Award Event",
+			"date": "11/13/2015",
+			"category": "meeting",
+			"description": "Gideon attended CNN Hero award event.",
+			"amount": 490
+		},
+		{
+			"title": "xyz",
+			"date": "2016-12-31T00:00:00.000Z",
+			"type": "donation",
+			"description": "",
+			"amount": "55"
+		},
+		{
+			"title": "sdg",
+			"date": "2016-12-31T00:00:00.000Z",
+			"type": "donation",
+			"description": "",
+			"amount": "113"
+		}
+	]
 }

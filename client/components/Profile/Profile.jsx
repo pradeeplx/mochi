@@ -32,6 +32,8 @@ export class Profile extends React.Component {
       username,
     } = this.props;
 
+    const { submitUserEvent } = this.props.actions;
+
     let gpassFancy = <span></span>;
     if (username === 'gpass1' && profile.photo) {
       gpassFancy = (
@@ -59,7 +61,7 @@ export class Profile extends React.Component {
           <Avatar photo={profile.photo}>
             {`${profile.first} ${profile.last}`}
           </Avatar>
-          <AddEventControls />
+          <AddEventControls username={username} addEvent={submitUserEvent} />
         </div>
         {gpassBoring}
         <SummaryStats

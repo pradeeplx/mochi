@@ -33,3 +33,22 @@ export const fetchAllUsers = () =>
     return api.getAllUsers()
     .then(users => dispatch(receiveAllUsers(users)));
   };
+
+const addUserEvent = (username, event) => ({
+  type: actions.ADD_USER_EVENT,
+  username,
+  event,
+});
+
+export const submitUserEvent = (username, event) =>
+  dispatch => {
+    dispatch(addUserEvent(username, event));
+    return api.addUserEvent(username, event)
+    .then(() => {
+      fetchAllUsers();
+    }, (err) => {
+      if (process.env.NODE_ENV !== 'production') {
+        console.error(err);
+      }
+    });
+  };
