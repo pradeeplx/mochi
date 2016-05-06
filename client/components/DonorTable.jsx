@@ -29,8 +29,7 @@ export class DonorTable extends React.Component {
          <thead>
             <tr>
               <th></th>
-              <th>First</th>
-              <th>Last</th>
+              <th>Name</th>
               <th>Email</th>
               <th>City</th>
             </tr>
