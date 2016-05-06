@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "username": "bpopper",
+        "email": "benpopper@theverge.com",
+        "first": "Ben",
+        "last": "Popper",
+        "twitter": "popper.b",
+        "phoneNumber": "718-875-8231",
+        "city": "Brooklyn",
+        "state": "NY",
+        "photo": "/profile/bpopper.jpg"
+    },
+    "events": []
+}

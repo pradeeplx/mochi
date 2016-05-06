@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "username": "alex",
+        "email": "anaidus@buzzfeed.com",
+        "first": "Alex",
+        "last": "Naidus",
+        "twitter": "hotdoorknobs",
+        "phoneNumber": "201-280-2563",
+        "city": "Los Angeles",
+        "state": "CA",
+        "photo": "/profile/alex.jpg"
+    },
+    "events": []
+}
