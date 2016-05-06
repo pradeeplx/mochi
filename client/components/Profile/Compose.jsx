@@ -8,6 +8,7 @@ import Sean2 from '../../assets/sean2.jpg';
 import Sean3 from '../../assets/sean3.jpg';
 import Sean4 from '../../assets/sean4.jpg';
 import LoadingAnimation from '../../assets/ajax-load.gif';
+import Logo from '../../assets/emaillogo.png';
 
 const handleClick = (e, addEventFunc, username, event, router) => {
   e.preventDefault();
@@ -42,14 +43,14 @@ export const Compose = ({ profile, actions, router }) => (
     <div className="col-md-7 col-md-offset-1 main compose-box">
       <div className="compose-box-wrapper">
         <div className="letter-box">
-          <h1>MOCHI</h1>
+          <img className="email-logo" src={`/${Logo}`} />
           <p>Hi {profile.first}!</p>
-          <p>It’s been over a year since you last donated to Mochi! So much has
+          <p>It’s been <span className="mochi-pink">over a year since you last donated</span> to Mochi! So much has
              gone on since then. New programs, new projects, and new staff! Just
              last week, Taylor Swift visited our offices to let us know that
              she loves what Mochi is doing.</p>
-          <p>We thought you might enjoy these photos from your visit to Mochi
-            HQ , and from Queen Tay’s visit!</p>
+          <p>We thought you might enjoy these photos from <span className="mochi-blue">your visit to Mochi
+            HQ</span> , and from Queen Tay’s visit!</p>
           <p>As always, our organization depends on long term members like you!
             We are seeking donors for our 2016 annual membership drive, and we
             need your help!</p>
