@@ -11,7 +11,6 @@ import MochifyControls from './MochifyControls';
 // import ImgAnimation from '../../assets/ANIMATION.gif';
 // import ImgBox1B from '../../assets/box1b.png';
 // import ImgBox2B from '../../assets/box2b.png';
-import Link from 'react-router/lib/Link';
 
 // const GPASS_DELAY = 6500;
 

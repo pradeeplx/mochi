@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import NavBar from '../components/NavBar';
 import SideBar from '../components/NavBar/SideBar';
+import { Timeline } from '../containers'
 import Sean1 from '../assets/sean1.jpg';
 import Sean2 from '../assets/sean2.jpg';
 import Sean3 from '../assets/sean3.jpg';
@@ -37,11 +38,7 @@ export const ComposePage = () =>
             </div>
           </div>
         </div>
-
-
-        <div className="col-md-4 main timeline">
-          <h1>Timeline</h1>
-        </div>
+        <Timeline />
       </div>
     </section>
   </div>;
