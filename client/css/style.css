@@ -405,3 +405,7 @@ img.mochify-bounce {
   height: 50px;
   border-radius: 50%;
 }
+
+#mochify-bounce-modal h2 {
+  text-align: center;
+}
