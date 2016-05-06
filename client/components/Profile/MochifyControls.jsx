@@ -3,7 +3,6 @@
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import Dropdown from '../../components/Button/Dropdown';
 import Modal from '../Modal';
-// import Link from 'react-router/lib/Link';
 
 const avatarImageStyle = photo => ({
   'background': `url(${photo}) #b7b7b7 no-repeat 50% / cover`,
@@ -27,7 +26,6 @@ export const MochifyControls = () =>
           style={avatarImageStyle('http://r3.pitch.com/files/base/scomm/kcp/image/2015/02/640w/sen_smith_greg_1.jpg')}
         />
         <p>Greg Pass, M, 27, singer</p>
-        // <Link to={'/donor/gpass2'}><button>Select</button></Link>
       </div>
 
     </Modal>
