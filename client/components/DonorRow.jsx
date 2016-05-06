@@ -13,10 +13,10 @@ export const DonorRow = ({ first, last, email, city, username, photo }) => {
         style={{ background: avatarImageStyle }}
       />
     </td>
-    <td><Link to={`/donor/${username}`}>{first}</Link></td>
-    <td><Link to={`/donor/${username}`}>{last}</Link></td>
-    <td><Link to={`/donor/${username}`}>{email}</Link></td>
-    <td>{city}</td>
+    <td className="donor-list-name"><Link to={`/donor/${username}`}>{first}</Link></td>
+    <td className="donor-list-name"><Link to={`/donor/${username}`}>{last}</Link></td>
+    <td className="donor-list-detail"><Link to={`/donor/${username}`}>{email}</Link></td>
+    <td className="donor-list-detail"><Link to={`/donor/${username}`}>{city}</Link></td>
   </tr>);
   };
 

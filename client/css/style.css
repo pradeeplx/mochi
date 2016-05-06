@@ -403,16 +403,33 @@ h3 span {
   margin-top: 10px;
 }
 
-
-
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-  vertical-align: middle;
+.profile-extras {
+  display: flex;
 }
+
+.profile-extras img {
+  max-height: 300px;
+  margin: 1rem;
+}
+
+img.mochify-bounce {
+  margin: auto;
+}
+
+.donor-table .donor-list-name a {
+  vertical-align: middle;
+  font-size: 18px;
+  color: black;
+}
+
+.donor-table .donor-list-detail a {
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+
+}
+
 
 .donor-profile-img {
   width: 50px;
@@ -445,9 +462,3 @@ h3 span {
   font-weight: bold;
   width: 250px;
 }
-
-
-
-
-
-
