@@ -522,3 +522,7 @@ img.mochify-bounce {
   font-weight: bold;
   width: 250px;
 }
+
+#twitter-widget-0 {
+  height: 300px !important;
+}
