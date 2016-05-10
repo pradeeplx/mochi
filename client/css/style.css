@@ -358,6 +358,14 @@ h3 span {
   padding: 27px 7px;
 }
 
+.media-box-container #first-img{
+  padding-left: 30px;
+}
+
+.media-box-container img {
+  margin-right: 7px;
+}
+
 .compose-box-wrapper {
   margin-bottom: 184px;
 }
@@ -485,7 +493,7 @@ img.mochify-bounce {
   text-align: center;
 }
 
-.letter-box img {
+.letter-box img:not(#joined) {
   max-height: 185px;
   margin-right: 7px;
   margin-top: 17px;

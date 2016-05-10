@@ -3,10 +3,11 @@
 import React, { PropTypes } from 'react';
 import Modal from '../Modal';
 import Button from '../Button/Button';
-import Sean1 from '../../assets/sean1.jpg';
-import Sean2 from '../../assets/sean2.jpg';
-import Sean3 from '../../assets/sean3.jpg';
-import Sean4 from '../../assets/sean4.jpg';
+import gid1 from '../../assets/gid1.jpg';
+import gid2 from '../../assets/gid2.jpg';
+import gid3 from '../../assets/gid3.jpg';
+import gid4 from '../../assets/gid4.jpg';
+import joined from '../../assets/joined.png';
 import LoadingAnimation from '../../assets/ajax-load.gif';
 import Logo from '../../assets/emaillogo.png';
 
@@ -54,8 +55,9 @@ export const Compose = ({ profile, actions, router }) => (
           <p>As always, our organization depends on long term members like you!
             We are seeking donors for our 2016 annual membership drive, and we
             need your help!</p>
-          <img className="" src={`/${Sean1}`} />
-          <img className="" src={`/${Sean4}`} />
+          <div className="center">
+            <img id="joined" className="img-responsive" src={`/${joined}`} />
+          </div>
           <p>Click the donate button at the bottom of this email to instantly send at tax-deductible donation to Mochi!</p>
           <div className="center">
             <button className="btn btn-donate">Donate</button>
@@ -77,20 +79,12 @@ export const Compose = ({ profile, actions, router }) => (
     </div>
     <div className="col-md-7 col-md-offset-1 media-box-float">
       <div className="media-box">
-        <div className="col-md-12 media-box-container">
+        <div className="media-box-container">
           <span id="scroll-left" className="glyphicon glyphicon-chevron-left"></span>
-          <div className="col-md-3 media-box-item">
-            <img src={`/${Sean1}`} />
-          </div>
-          <div className="col-md-3 media-box-item">
-            <img src={`/${Sean2}`} />
-          </div>
-          <div className="col-md-3 media-box-item">
-            <img src={`/${Sean3}`} />
-          </div>
-          <div className="col-md-3 media-box-item">
-            <img src={`/${Sean4}`} />
-          </div>
+          <img id="first-img" src={`/${gid1}`} />
+          <img src={`/${gid2}`} />
+          <img src={`/${gid3}`} />
+          <img src={`/${gid4}`} />
           <span id="scroll-right" className="glyphicon glyphicon-chevron-right"></span>
         </div>
       </div>
