@@ -64,7 +64,10 @@ export class Profile extends React.Component {
           city={profile.city}
           state={profile.state}
         />
-        <ProfileExtras images={profile.details || []} />
+        <ProfileExtras
+          images={profile.details || []}
+          twitterHandle={profile.twitter}
+        />
         <KeepInTouch
           first={profile.first}
           username={username}
