@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
 
 export const ProfileExtras = ({ images }) => {
-  const elems = images.map((url, i) => <img key={i} src={url} />);
+  const elems = images.map((url, i) =>
+    <img className="img-responsive" key={i} src={url} />);
 
   return (
     <div className="profile-extras">
